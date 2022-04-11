@@ -1,0 +1,10 @@
+body[b-jnvv3so3ak] {
+}
+.container[b-jnvv3so3ak] {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+}

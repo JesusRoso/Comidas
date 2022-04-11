@@ -1,0 +1,14 @@
+﻿body {
+
+}
+.container{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+}
+.container__elements{
+    width: 200px;
+}

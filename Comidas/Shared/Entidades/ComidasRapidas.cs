@@ -14,6 +14,6 @@ namespace Comidas.Shared.Entidades
         public string titulo { get; set; }
         [Required(ErrorMessage = "El campo {1} es requerido")]
         public int precio { get; set; }
-        public List<ComidaPersona> ComidaPersonas { get; set; }
+        //public List<ComidaPersona> ComidaPersonas { get; set; }
     }
 }
