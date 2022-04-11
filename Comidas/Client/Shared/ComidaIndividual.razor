@@ -1,0 +1,29 @@
+﻿@inject IJSRuntime js
+<tr>
+	<td><a href="@urlComida" style="text-decoration:none">@comidaRapidaNombre.titulo</a></td>
+	<td>@comidaRapidaNombre.precio</td>
+	<td><button @onclick="@(()=>EliminarComida.InvokeAsync(comidaRapidaNombre))">Borrar</button></td>
+	<td><input type="checkbox" @bind="agregarCantidad" /></td> @*bind crea un enlace entre una variable y un elemento html o componente*@
+
+	@if(agregarCantidad)
+	{
+		<td><input type="number" @bind="cantidad" @attributes="ParametrosAdicionales"/></td>
+		//con @attibutes se puede pasar atributos a componentes o elementos html (puede ser más de 1)	
+		Console.WriteLine($"Se seleccionó {comidaRapidaNombre.titulo}");
+		Console.WriteLine(cantidad);
+	}
+</tr>	
+@code 
+{
+	int cantidad = 0;
+	[Parameter] public ComidasRapidas comidaRapidaNombre { get; set; }
+	[Parameter] public EventCallback<ComidasRapidas> EliminarComida { get; set; }
+	bool agregarCantidad = false;
+	private string urlComida = string.Empty;
+	protected override void OnInitialized()
+	{
+		urlComida = $"alimentos/";
+	}
+	[Parameter(CaptureUnmatchedValues = true)] public IDictionary<string, object> ParametrosAdicionales { get; set; } //para los parámetros adicionales
+
+}

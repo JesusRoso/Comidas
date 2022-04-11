@@ -1,0 +1,45 @@
+﻿@inject IJSRuntime js
+<div>
+ <h2>Listado de comidad rápidas</h2>
+
+ <ListadoGenerico Listado="ComidaRapida">
+	 <HayRegistros Context="nombre">
+		 	<ComidaIndividual placeholder="Precio de comida" comidaRapidaNombre="nombre" EliminarComida="EliminarComida"></ComidaIndividual>
+	</HayRegistros>
+ </ListadoGenerico>
+
+ <Confirmacion @ref=confirmacion onConfirm="EliminarComidaConfirmacion" onCancel="onCancelConfirmacíon">
+	 <div>¿Desea borrar la pelicula?</div>
+ </Confirmacion>
+</div>
+
+@code 
+{
+	Confirmacion confirmacion;
+	[Parameter] public List<ComidasRapidas> ComidaRapida { get; set; }
+
+	async void EliminarComida(ComidasRapidas comidaRapida)
+	{
+		confirmacion.Mostrar();
+		comidaABorrar = comidaRapida;
+		//var confirmado = await js.Confirm($"Desea borrar {comidaRapida.titulo}?");
+		//if(confirmado)
+		//{
+		//	ComidaRapida.Remove(comidaRapida);
+		//	Console.WriteLine($"Eliminando comida {comidaRapida.titulo}");
+		//}
+
+	}
+	ComidasRapidas comidaABorrar;
+	public void EliminarComidaConfirmacion() //elimina la comida
+	{
+		ComidaRapida.Remove(comidaABorrar);
+		confirmacion.Ocultar();
+		comidaABorrar = null;
+	}
+	void onCancelConfirmacíon() //oculta la ventana modal
+	{
+		confirmacion.Ocultar();
+		comidaABorrar = null;
+	}
+}

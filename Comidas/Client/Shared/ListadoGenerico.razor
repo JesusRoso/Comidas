@@ -1,0 +1,48 @@
+﻿@typeparam Titem
+ @if(Listado==null)
+ { 
+	 @if(Cargando == null)
+	 {
+		 <text>Cargando . . . </text>	
+	 }
+	 else
+	 {
+		 @Cargando
+	 }
+ }
+ else if(Listado.Count==0)
+ {
+	 @if(NoHayRegistros == null)
+	 {
+		 <text>No hay comidas disponibles</text>	
+	 }
+	 else
+	 {
+		 @NoHayRegistros
+	}
+}
+else
+{
+<table class="table table-hover">
+	<thead>
+		<th>Nombre</th>
+		<th>Precio</th>
+		<th>Acción</th>
+		<th>Elegir</th>
+		<th>Cantidad</th>
+	</thead>
+	<tbody>
+		@foreach (var elemento in Listado)
+		{
+			@HayRegistros(elemento)
+		}
+	</tbody>
+</table>
+}
+@code 
+{
+	[Parameter] public RenderFragment Cargando { get; set; }
+	[Parameter] public RenderFragment NoHayRegistros { get; set; } 
+	[Parameter] public RenderFragment<Titem> HayRegistros { get; set; }
+	[Parameter] public List<Titem> Listado { get; set; }
+}

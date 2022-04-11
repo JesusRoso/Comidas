@@ -1,0 +1,13 @@
+﻿@page "/alimentos/{AlimentoId:int}"
+@page "/alimentos/{AlimentoId:int}/{NombrePelicula}"
+<h3>VisualizarComidas</h3>
+
+@code 
+{
+	[Parameter] public int AlimentoId { get; set; }
+	[Parameter] public string NombrePelicula { get; set; }
+	protected override void OnInitialized()
+	{
+		Console.WriteLine($"El id de la pelicula es {AlimentoId}");
+	}
+}

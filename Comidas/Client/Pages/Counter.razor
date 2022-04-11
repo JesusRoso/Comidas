@@ -1,0 +1,27 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+<div style="display:flex">
+	<div style="width:150px">
+		<select @bind="@appState.color" class="form-control" style="margin-top:15px">
+			<option value="green">Verde</option>
+			<option value="red">Rojo</option>
+			<option value="blue">Azul</option>
+		</select>
+	</div>
+	<div style="width:150px">
+		<select @bind="@appState.size" class="form-control" style="margin-top:15px">
+			<option value="12px">12px</option>
+			<option value="20px">20px</option>
+			<option value="25px">25px</option>
+		</select>
+	</div>
+</div>
+<p style="color:@appState.color">Current count: @currentCount</p>
+<p style="font-size:@appState.size">Singleton count: @singleton.Valor</p>
+<p role="status">Trancient count: @trancient.Valor</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+

@@ -1,0 +1,57 @@
+﻿@page "/alimentos/buscar"
+@inject IRepositorio repositorio
+<h3>Filtro Comidas</h3>
+
+<div class="form-inline">
+	<div class="form-group mb-2">
+		<label for="titulo" class="sr-only">Titulo</label>
+		<input @bind-value="titulo" @bind-value:event="oninput" @onkeypress="@((KeyboardEventArgs e)=> TituloKeyPress(e))"
+		type="text" class="form-control" id="titulo" placeholder="Nombre comida" />
+	</div>
+	<div class="form-group mb-2">
+		<label for="precio" class="sr-only">Precio</label>
+		<input @bind-value="precio" @bind-value:event="oninput" @onkeypress="@((KeyboardEventArgs e)=> PrecioKeyPress(e))"
+		type="number" class="form-control" id="precio" />
+	</div>
+	<button type="button" class="btn btn-primary mb-2 mx-sm-3" @onclick="CargaNuevaComida">Filtrar</button>
+	<button type="button" class="btn btn-danger mb-2 " @onclick="LimpiarOnClick">Limpiar</button>
+</div>
+
+<ListadoComidas ComidaRapida=ComidasRapidas></ListadoComidas>
+
+@code 
+{
+	private List<ComidasRapidas> ComidasRapidas;
+	string titulo = "";
+	private void TituloKeyPress(KeyboardEventArgs e)
+	{
+		if(e.Key == "Enter")
+		{
+			CargaNuevaComida();
+		}
+	}
+	int precio = 0;
+	private void PrecioKeyPress(KeyboardEventArgs e)
+	{
+		if(e.Key == "Enter")
+		{
+			CargaNuevaComida();
+		}
+	}
+	protected override void OnInitialized()
+	{
+		ComidasRapidas = repositorio.ObtenerComidas();
+	}
+	private void CargaNuevaComida()
+	{
+		ComidasRapidas = repositorio.ObtenerComidas().Where(x => x.titulo.ToLower().Contains(titulo.ToLower())).ToList();
+		Console.WriteLine($"Nombre: {titulo}");
+		Console.WriteLine($"Precio: {precio}");
+	}
+	private void LimpiarOnClick()
+	{
+		ComidasRapidas = repositorio.ObtenerComidas();
+		titulo = "";
+		precio = 0;
+	}
+}

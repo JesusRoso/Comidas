@@ -1,0 +1,21 @@
+﻿@page "/"
+@inject ServiciosSingleton singleton
+@inject IRepositorio repositorio
+<PageTitle>Index</PageTitle>
+<p role="status">Singleton count: @singleton.Valor</p>
+<ListadoComidas ComidaRapida="ComidasRapidas">
+	
+</ListadoComidas>
+
+<div class="form-group">
+	<a class="btn btn-info" href="alimentos/crear">Agregar comida</a>
+</div>
+
+@code
+{
+	private List<ComidasRapidas> ComidasRapidas;
+	protected override void OnInitialized()
+	{
+		ComidasRapidas = repositorio.ObtenerComidas();
+	}
+}

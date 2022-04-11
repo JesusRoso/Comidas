@@ -1,0 +1,18 @@
+﻿@page "/alimentos/editar/{AlimentoId:int}"
+<h3>EditarComida</h3>
+<FomularioComidas OnValidSubmit="Editar" ComidaRapida="ComidaRapida"></FomularioComidas>
+
+@code {
+	[Parameter] public int AlimentoId { get; set; }
+	private ComidasRapidas ComidaRapida;
+	protected override void OnInitialized()
+	{
+		ComidaRapida = new ComidasRapidas() { Id = AlimentoId, titulo="Papas francesas", precio=3000 };
+	}
+	private void Editar()
+	{
+		Console.WriteLine("Editando comida rápida");
+		Console.WriteLine($"Id: {ComidaRapida.Id}");
+		Console.WriteLine($"Nombre: {ComidaRapida.titulo}");
+	}
+}

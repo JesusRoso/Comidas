@@ -1,0 +1,32 @@
+﻿
+@inject IJSRuntime js
+<div>
+	<input type="text" />
+	<input type="number" />
+	<button onclick="@(()=>{AgregarUnaComida.InvokeAsync(nombre);
+							AgregarUnaComida.InvokeAsync(precio);
+							})">Agregar</button>
+	<button @onclick="mensajeJs"> Mensaje</button>
+</div>
+
+
+@code {
+
+	public ComidasRapidas nombre { get; set; }
+	public ComidasRapidas precio { get; set; }
+	private List<ComidasRapidas> addComida;
+	protected override void OnInitialized()
+	{
+		addComida = new List<ComidasRapidas>()
+		{
+			new ComidasRapidas(){titulo = "Perro Caliente",precio = 2500}
+		};	
+	}
+
+	[Parameter] public EventCallback<ComidasRapidas> AgregarUnaComida { get; set; }
+	public void mensajeJs()
+	{
+		js.InvokeVoidAsync("confirm","agregado");
+	}
+
+}

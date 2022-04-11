@@ -1,0 +1,50 @@
+﻿<EditForm Model="ComidaRapida" OnValidSubmit="OnValidSubmit">
+	<DataAnnotationsValidator></DataAnnotationsValidator>
+	<div class="form-group" style="margin-bottom:15px">
+		<label>Nombre:</label>
+		<div>
+			<InputText class="form-control" @bind-Value="@ComidaRapida.titulo"></InputText>
+			<ValidationMessage For="@(()=>ComidaRapida.titulo)"></ValidationMessage>
+		</div>
+		<label>Precio:</label>
+		<div>
+			<InputNumber class="form-control" @bind-Value="@ComidaRapida.precio"></InputNumber>
+			<ValidationMessage For="@(()=>ComidaRapida.precio)"></ValidationMessage>
+		</div>
+	</div>
+    <button class="btn btn-success" type="submit">Guardar</button>
+
+	<div class="form-group">
+            <label>Personas:</label>
+            <div>
+                <SelectorMultipleTypeahead Context="persona"
+                                           SearchMethod="BuscarAlimentos" 
+                                           ElementosSeleccionados="ComidasSeleccionadas">
+                    <MyListTemplate>
+                        @persona.Nombre
+                    </MyListTemplate>
+                    <MyResultTemplate>
+                        @persona.Nombre
+                    </MyResultTemplate>
+                </SelectorMultipleTypeahead>
+            </div>
+        </div>
+
+
+	
+</EditForm>
+@code 
+{
+	[Parameter] public ComidasRapidas ComidaRapida { get; set; }
+	[Parameter] public EventCallback OnValidSubmit { get; set; }
+    [Parameter] public List<Persona> ComidasSeleccionadas { get; set; } = new List<Persona>();
+
+	private async Task<IEnumerable<Persona>> BuscarAlimentos(string searchText)
+    {
+        return new List<Persona>()
+        {
+            new Persona(){Id=1, Nombre="Tom Holland"},
+            new Persona(){Id=2, Nombre="Tom Hanks"}
+        };
+    }
+}

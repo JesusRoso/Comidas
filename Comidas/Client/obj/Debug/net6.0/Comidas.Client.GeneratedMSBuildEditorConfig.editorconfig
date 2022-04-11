@@ -1,0 +1,119 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = Comidas.Client
+build_property.RootNamespace = Comidas.Client
+build_property.ProjectDir = C:\Users\ASUS\source\repos\Comidas\Comidas\Client\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\ASUS\source\repos\Comidas\Comidas\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Pages/Alimentos/CrearComida.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxpbWVudG9zXENyZWFyQ29taWRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Pages/Alimentos/EditarComida.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxpbWVudG9zXEVkaXRhckNvbWlkYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Pages/Alimentos/FiltroComidas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxpbWVudG9zXEZpbHRyb0NvbWlkYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Pages/Alimentos/FomularioComidas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxpbWVudG9zXEZvbXVsYXJpb0NvbWlkYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Pages/Alimentos/IndiceAlimentos.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxpbWVudG9zXEluZGljZUFsaW1lbnRvcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Pages/Alimentos/VisualizarComidas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxpbWVudG9zXFZpc3VhbGl6YXJDb21pZGFzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Pages/Personas/CrearPersonas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYXNcQ3JlYXJQZXJzb25hcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Pages/Personas/EditarPersonas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYXNcRWRpdGFyUGVyc29uYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Pages/Personas/FormularioPersonas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYXNcRm9ybXVsYXJpb1BlcnNvbmFzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Pages/Personas/IndicePersonas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYXNcSW5kaWNlUGVyc29uYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Shared/AgregarComida.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFncmVnYXJDb21pZGEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Shared/ComidaIndividual.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbWlkYUluZGl2aWR1YWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Shared/Confirmacion.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbmZpcm1hY2lvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Shared/ListadoComidas.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExpc3RhZG9Db21pZGFzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Shared/ListadoGenerico.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExpc3RhZG9HZW5lcmljby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Shared/SelectorMultipleTypeahead.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNlbGVjdG9yTXVsdGlwbGVUeXBlYWhlYWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-d58sv7k78l
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Shared/CustomTypeahead.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEN1c3RvbVR5cGVhaGVhZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ysw3p2a2hq
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-n2ovme7b3z
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-va9nhnw76s

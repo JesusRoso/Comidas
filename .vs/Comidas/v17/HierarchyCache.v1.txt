@@ -1,0 +1,269 @@
+﻿++Solución "Comidas" ‎(3 de 3 proyectos)
+i:{00000000-0000-0000-0000-000000000000}:Comidas.sln
+++Comidas.Server
+i:{00000000-0000-0000-0000-000000000000}:Comidas.Server
+++Connected Services 
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:>2360
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:>2361
+++Base de datos de SQL Server
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:>2417
+++Dependencias
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:>2358
+i:{3aa977f7-94ab-42f5-bb3a-cb548b821414}:>1342
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:>2359
+++Analizadores
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:analizadores
+i:{3aa977f7-94ab-42f5-bb3a-cb548b821414}:analizadores
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:analizadores
+++Marcos de trabajo
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:marcos de trabajo
+i:{3aa977f7-94ab-42f5-bb3a-cb548b821414}:marcos de trabajo
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:marcos de trabajo
+++Paquetes
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:paquetes
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:paquetes
+++Proyectos
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:proyectos
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:proyectos
+++Properties
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\properties\
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\properties\
+++launchSettings.json
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\properties\launchsettings.json
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\properties\launchsettings.json
+++Controllers
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\controllers\
+++WeatherForecastController.cs
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\controllers\weatherforecastcontroller.cs
+++Pages
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\pages\
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\
+++Error.cshtml
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\pages\error.cshtml
+++ApplicationDbContext.cs
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\applicationdbcontext.cs
+++appsettings.json
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\appsettings.json
+++appsettings.Development.json
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\appsettings.development.json
+++Program.cs
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\program.cs
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\program.cs
+++Se detectó la dependencia Base de datos de SQL Server
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:>2418
+++Microsoft.AspNetCore.Analyzers
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\.nuget\packages\microsoft.aspnetcore.components.analyzers\6.0.3\analyzers\dotnet\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{3aa977f7-94ab-42f5-bb3a-cb548b821414}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{3aa977f7-94ab-42f5-bb3a-cb548b821414}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.3\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.1\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.3\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{3aa977f7-94ab-42f5-bb3a-cb548b821414}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.3\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.3\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\microsoft.netcore.app
+i:{3aa977f7-94ab-42f5-bb3a-cb548b821414}:c:\users\asus\source\repos\comidas\comidas\shared\microsoft.netcore.app
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\microsoft.netcore.app
+++Microsoft.AspNetCore.Components.WebAssembly.Server (6.0.3)
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:>2380
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.3)
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:>2412
+++Microsoft.EntityFrameworkCore.Tools (6.0.3)
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:>2414
+++Comidas.Client
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\client\bin\debug\net6.0\comidas.client.dll
+i:{00000000-0000-0000-0000-000000000000}:Comidas.Client
+++Comidas.Shared
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\shared\bin\debug\net6.0\comidas.shared.dll
+i:{00000000-0000-0000-0000-000000000000}:Comidas.Shared
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\shared\bin\debug\net6.0\comidas.shared.dll
+++Error.cshtml.cs
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\pages\error.cshtml.cs
+++Entidades
+i:{3aa977f7-94ab-42f5-bb3a-cb548b821414}:c:\users\asus\source\repos\comidas\comidas\shared\entidades\
+++ComidaPersona.cs
+i:{3aa977f7-94ab-42f5-bb3a-cb548b821414}:c:\users\asus\source\repos\comidas\comidas\shared\entidades\comidapersona.cs
+++ComidasRapidas.cs
+i:{3aa977f7-94ab-42f5-bb3a-cb548b821414}:c:\users\asus\source\repos\comidas\comidas\shared\entidades\comidasrapidas.cs
+++Persona.cs
+i:{3aa977f7-94ab-42f5-bb3a-cb548b821414}:c:\users\asus\source\repos\comidas\comidas\shared\entidades\persona.cs
+++VotoComida.cs
+i:{3aa977f7-94ab-42f5-bb3a-cb548b821414}:c:\users\asus\source\repos\comidas\comidas\shared\entidades\votocomida.cs
+++WeatherForecast.cs
+i:{3aa977f7-94ab-42f5-bb3a-cb548b821414}:c:\users\asus\source\repos\comidas\comidas\shared\weatherforecast.cs
+++wwwroot
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\
+++css
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\open-iconic\font\css\
+++bootstrap
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\bootstrap\
+++open-iconic
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\open-iconic\
+++app.css
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\app.css
+++js
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\js\
+++favicon.ico
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\favicon.ico
+++icon-192.png
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\icon-192.png
+++index.html
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\index.html
+++Helpers
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\helpers\
+++Alimentos
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\alimentos\
+++Personas
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\personas\
+++Counter.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\counter.razor
+++FetchData.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\fetchdata.razor
+++Index.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\index.razor
+++Repositorios
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\repositorios\
+++Shared
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\shared\
+++AgregarComida.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\shared\agregarcomida.razor
+++ComidaIndividual.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\shared\comidaindividual.razor
+++Confirmacion.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\shared\confirmacion.razor
+++CustomTypeahead.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\shared\customtypeahead.razor
+++CustomTypeahead.razor.css
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\shared\customtypeahead.razor.css
+++CustomTypeahed.razor.cs
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\shared\customtypeahed.razor.cs
+++ListadoComidas.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\shared\listadocomidas.razor
+++ListadoGenerico.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\shared\listadogenerico.razor
+++MainLayout.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\shared\mainlayout.razor
+++NavMenu.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\shared\navmenu.razor
+++SelectorMultipleTypeahead.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\shared\selectormultipletypeahead.razor
+++SurveyPrompt.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\shared\surveyprompt.razor
+++_Imports.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\_imports.razor
+++App.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\app.razor
+++Servicios.cs
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\servicios.cs
+++No se detectaron dependencias de servicio
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:>2362
+++bootstrap.min.css
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\bootstrap\bootstrap.min.css
+++font
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\open-iconic\font\
+++FONT-LICENSE
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\open-iconic\font-license
+++ICON-LICENSE
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\open-iconic\icon-license
+++README.md
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\open-iconic\readme.md
+++Counter.js
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\js\counter.js
+++Script.js
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\js\script.js
+++IJSRuntimeExtensionMethods.cs
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\helpers\ijsruntimeextensionmethods.cs
+++CrearComida.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\alimentos\crearcomida.razor
+++EditarComida.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\alimentos\editarcomida.razor
+++FiltroComidas.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\alimentos\filtrocomidas.razor
+++FomularioComidas.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\alimentos\fomulariocomidas.razor
+++IndiceAlimentos.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\alimentos\indicealimentos.razor
+++VisualizarComidas.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\alimentos\visualizarcomidas.razor
+++CrearPersonas.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\personas\crearpersonas.razor
+++EditarPersonas.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\personas\editarpersonas.razor
+++FormularioPersonas.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\personas\formulariopersonas.razor
+++IndicePersonas.razor
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\personas\indicepersonas.razor
+++Counter.razor.cs
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\counter.razor.cs
+++Counter.razor.css
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\pages\counter.razor.css
+++IRepositorio.cs
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\repositorios\irepositorio.cs
+++Repositorio.cs
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\repositorios\repositorio.cs
+++MainLayout.razor.css
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\shared\mainlayout.razor.css
+++NavMenu.razor.css
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\shared\navmenu.razor.css
+++ILLink.CodeFixProvider
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\illink.codefixprovider.dll
+++ILLink.RoslynAnalyzer
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\illink.roslynanalyzer.dll
+++MathNet.Numerics (4.15.0)
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:>2403
+++Microsoft.AspNetCore.Components.WebAssembly (6.0.3)
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:>2404
+++Microsoft.AspNetCore.Components.WebAssembly.DevServer (6.0.3)
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:>2405
+++bootstrap.min.css.map
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\bootstrap\bootstrap.min.css.map
+++fonts
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\open-iconic\font\fonts\
+++open-iconic-bootstrap.min.css
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css
+++open-iconic.eot
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\open-iconic\font\fonts\open-iconic.eot
+++open-iconic.otf
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\open-iconic\font\fonts\open-iconic.otf
+++open-iconic.svg
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\open-iconic\font\fonts\open-iconic.svg
+++open-iconic.ttf
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf
+++open-iconic.woff
+i:{42967cc5-f57e-4c5d-8ce9-4e2edce7b945}:c:\users\asus\source\repos\comidas\comidas\client\wwwroot\css\open-iconic\font\fonts\open-iconic.woff
+++Migrations
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\migrations\
+++20220408165733_Initial.cs
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\migrations\20220408165733_initial.cs
+++ApplicationDbContextModelSnapshot.cs
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\migrations\applicationdbcontextmodelsnapshot.cs
+++20220408165733_Initial.Designer.cs
+i:{ebea54b5-db9a-4ba0-9667-765e99295ced}:c:\users\asus\source\repos\comidas\comidas\server\migrations\20220408165733_initial.designer.cs

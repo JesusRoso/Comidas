@@ -1,0 +1,19 @@
+﻿@page "/alimentos/crear"
+@inject NavigationManager navigationManager
+<h3>CrearComida</h3>
+@*<button @onclick="Crear">Salvar Comida</button>*@
+
+<FomularioComidas OnValidSubmit="Crear" ComidaRapida="ComidaRapida"></FomularioComidas>
+@code 
+{
+	private ComidasRapidas ComidaRapida = new ComidasRapidas(); 
+	private void Crear()
+	{
+		Console.WriteLine("Ejecutando método crear");
+		Console.WriteLine($"Titulo {ComidaRapida.titulo}");
+	}
+	//void Crear()
+	//{
+	//	navigationManager.NavigateTo("alimentos");
+	//}
+}
