@@ -1,6 +1,32 @@
+/* /Pages/Alimentos/IndiceAlimentos.razor.rz.scp.css */
+body[b-jnvv3so3ak] {
+}
+.container[b-jnvv3so3ak] {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+}
 /* /Pages/Counter.razor.rz.scp.css */
 h1[b-d58sv7k78l] {
     color:red;
+}
+/* /Pages/Index.razor.rz.scp.css */
+body[b-5nak257x78] {
+
+}
+.container[b-5nak257x78]{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+}
+.container__elements[b-5nak257x78]{
+    width: 200px;
 }
 /* /Shared/CustomTypeahead.razor.rz.scp.css */
 .blazored-typeahead[b-ysw3p2a2hq] {

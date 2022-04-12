@@ -35,11 +35,11 @@
 </EditForm>
 @code 
 {
-	[Parameter] public ComidasRapidas ComidaRapida { get; set; }
-	[Parameter] public EventCallback OnValidSubmit { get; set; }
+    [Parameter] public ComidasRapidas ComidaRapida { get; set; }
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
     [Parameter] public List<Persona> ComidasSeleccionadas { get; set; } = new List<Persona>();
 
-	private async Task<IEnumerable<Persona>> BuscarAlimentos(string searchText)
+    private async Task<IEnumerable<Persona>> BuscarAlimentos(string searchText)
     {
         return new List<Persona>()
         {
@@ -47,4 +47,8 @@
             new Persona(){Id=2, Nombre="Tom Hanks"}
         };
     }
+    //private async Task OnDataAnnotationsValidated()
+    //{
+    //    ComidaRapida.ComidaPersonas = ComidasSeleccionadas.Select
+    //}
 }
