@@ -10,7 +10,7 @@ namespace Comidas.Shared.Entidades
 {
     public class Persona
     {
-
+        [Key]
         public int Id { get; set; }
         [Required]
         public string Nombre { get; set; }

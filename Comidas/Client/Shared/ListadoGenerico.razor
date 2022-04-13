@@ -14,7 +14,7 @@
  {
 	 @if(NoHayRegistros == null)
 	 {
-		 <text>No hay comidas disponibles</text>	
+		 <text>No hay registros disponibles</text>	
 	 }
 	 else
 	 {
@@ -23,26 +23,23 @@
 }
 else
 {
-<table class="table table-hover">
-	<thead>
-		<th>Nombre</th>
-		<th>Precio</th>
-		<th>Acción</th>
-		<th>Elegir</th>
-		<th>Cantidad</th>
-	</thead>
-	<tbody>
-		@foreach (var elemento in Listado)
+		@if(HayRegistros!=null)
 		{
-			@HayRegistros(elemento)
+			@foreach (var elemento in Listado)
+			{
+				@HayRegistros(elemento)
+			}
 		}
-	</tbody>
-</table>
+		else
+		{
+			@HayRegistrosCompleto
+		}
 }
 @code 
 {
 	[Parameter] public RenderFragment Cargando { get; set; }
 	[Parameter] public RenderFragment NoHayRegistros { get; set; } 
 	[Parameter] public RenderFragment<Titem> HayRegistros { get; set; }
+	[Parameter] public RenderFragment HayRegistrosCompleto { get; set; }
 	[Parameter] public List<Titem> Listado { get; set; }
 }

@@ -1,5 +1,6 @@
 ﻿using Comidas.Shared.Entidades;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Comidas.Server.Controllers
 {
@@ -11,6 +12,12 @@ namespace Comidas.Server.Controllers
         public PersonasController(ApplicationDbContext context)
         {
             this.context = context;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<Persona>>> Get()
+        {
+            return await context.Persona.ToListAsync();
         }
         [HttpPost]
         public async Task<ActionResult<int>> Post(Persona persona)

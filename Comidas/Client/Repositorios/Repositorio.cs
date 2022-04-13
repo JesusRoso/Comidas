@@ -12,6 +12,26 @@ namespace Comidas.Client.Repositorios
         {
             this.httpClient = httpClient;
         }
+        private JsonSerializerOptions OpcionesPorDefectoJSON => new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };//Proporciona funcionalidad para serializar objetos o tipos de valores en JSON y para deserializar JSON en objetos o tipos de valores
+        public async Task<HttpResponseWrapper<T>> Get<T>(string url)
+        {
+            var responseHTTP = await httpClient.GetAsync(url);
+
+            if(responseHTTP.IsSuccessStatusCode)
+            {
+                var response = await DeserializarRespuesta<T>(responseHTTP, OpcionesPorDefectoJSON);
+                return new HttpResponseWrapper<T>(response, false, responseHTTP);
+            }
+            else
+            {
+                return new HttpResponseWrapper<T>(default, true, responseHTTP);
+            }
+        }
+        private async Task<T> DeserializarRespuesta<T>(HttpResponseMessage httpResponse, JsonSerializerOptions jsonSerializerOptions)
+        {
+            var responseString = await httpResponse.Content.ReadAsStringAsync();
+            return JsonSerializer.Deserialize<T>(responseString, jsonSerializerOptions);
+        }
         public async Task<HttpResponseWrapper<object>> Post<T>(string url, T enviar)
         {
             var enviarJSON = JsonSerializer.Serialize(enviar);
@@ -19,6 +39,7 @@ namespace Comidas.Client.Repositorios
             var responseHttp = await httpClient.PostAsync(url, enviarContent);
             return new HttpResponseWrapper<object>(null, !responseHttp.IsSuccessStatusCode, responseHttp);
         }
+
         public List<ComidasRapidas> ObtenerComidas()
         {
             return new List<ComidasRapidas>()

@@ -58,10 +58,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYXNcRm9ybXVsYXJpb1BlcnNvbmFzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Pages/Personas/IndicePersonas.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYXNcSW5kaWNlUGVyc29uYXMucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Shared/AgregarComida.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFncmVnYXJDb21pZGEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -105,6 +101,10 @@ build_metadata.AdditionalFiles.CssScope = b-d58sv7k78l
 [C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-5nak257x78
+
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Pages/Personas/IndicePersonas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYXNcSW5kaWNlUGVyc29uYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-00op1i68tf
 
 [C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Shared/CustomTypeahead.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEN1c3RvbVR5cGVhaGVhZC5yYXpvcg==
