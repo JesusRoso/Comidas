@@ -829,3 +829,4 @@ C:\Users\ASUS\source\repos\Comidas\Comidas\Client\obj\Debug\net6.0\scopedcss\Pag
 C:\Users\ASUS\source\repos\Comidas\Comidas\Client\obj\Debug\net6.0\scopedcss\Shared\CustomTypeahead.razor.rz.scp.css
 C:\Users\ASUS\source\repos\Comidas\Comidas\Client\obj\Debug\net6.0\scopedcss\Pages\Index.razor.rz.scp.css
 C:\Users\ASUS\source\repos\Comidas\Comidas\Client\obj\Debug\net6.0\scopedcss\Pages\Alimentos\IndiceAlimentos.razor.rz.scp.css
+C:\Users\ASUS\source\repos\Comidas\Comidas\Client\obj\Debug\net6.0\scopedcss\Pages\Personas\IndicePersonas.razor.rz.scp.css
