@@ -197,7 +197,7 @@
       "netstandard.dll": "sha256-klcvWVyHimPfDxg6W1A076EKpCB5ySxjtc7sxJEsGgE=",
       "System.Private.CoreLib.dll": "sha256-Y8kdbfPQ0YoYLGbOgzRmoVsnuMYNlA1hvLvDWFTtzrk=",
       "Comidas.Shared.dll": "sha256-jkNSJxBxJ1VHYt6PSjV0O7KNurvxWmxnKAXtLpldOyM=",
-      "Comidas.Client.dll": "sha256-xIEQW974PNTuogjfRc\/Pqd2NL\/xqaR6KFcv+oOy7ooI="
+      "Comidas.Client.dll": "sha256-ztvlRffEty1sCmlIvTvtn+f5uJeoOaa0vpQsQSo59zY="
     },
     "extensions": null,
     "lazyAssembly": {
@@ -206,7 +206,7 @@
     "libraryInitializers": null,
     "pdb": {
       "Comidas.Shared.pdb": "sha256-sz2t4wikQ16wAN3M1ob1f0FiJCOQiuOTnZRrGvkgQbE=",
-      "Comidas.Client.pdb": "sha256-Zcm\/9lWn8wrhYRzUTycYaKSOwjLbMdWEQ5\/Hs94qYR4="
+      "Comidas.Client.pdb": "sha256-V3hKpiNSTKSX0EvuI5aV8bnQ+M0lMNn1ScGva791ZJ4="
     },
     "runtime": {
       "dotnet.6.0.3.s5k6nh0f4m.js": "sha256-pRmcHKZN4T\/YbX9dj6ITT4sNtkJ9w07OLcwl4645nPg=",

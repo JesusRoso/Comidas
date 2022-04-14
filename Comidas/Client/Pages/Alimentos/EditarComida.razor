@@ -1,18 +1,51 @@
 ﻿@page "/alimentos/editar/{AlimentoId:int}"
+@inject IRepositorio repositorio
+@inject NavigationManager navigationManager
+@inject IMostrarMensajes mostrarMensaje
+
 <h3>EditarComida</h3>
-<FomularioComidas OnValidSubmit="Editar" ComidaRapida="ComidaRapida"></FomularioComidas>
+@if(ComidaRapida==null)
+{
+	<text>Cargando . . . </text>
+}
+else
+{
+	<FomularioComidas OnValidSubmit="Editar" ComidaRapida="ComidaRapida"></FomularioComidas>
+}
 
 @code {
 	[Parameter] public int AlimentoId { get; set; }
 	private ComidasRapidas ComidaRapida;
-	protected override void OnInitialized()
+	protected async override Task OnInitializedAsync()
 	{
-		ComidaRapida = new ComidasRapidas() { Id = AlimentoId, titulo="Papas francesas", precio=3000 };
+		var httpResponse = await repositorio.Get<ComidasRapidas>($"api/ComidasRapidas/{AlimentoId}");
+		if(httpResponse.Error)
+		{
+			if(httpResponse.HttpResponseMessage.StatusCode==System.Net.HttpStatusCode.NotFound)
+			{
+				navigationManager.NavigateTo("alimentos");
+			}
+			else
+			{
+				await mostrarMensaje.MostrarMensajeError(await httpResponse.GetBody());
+			}
+		}
+		else
+		{
+			ComidaRapida = httpResponse.Response;
+		}
+
 	}
-	private void Editar()
+	private async Task Editar()
 	{
-		Console.WriteLine("Editando comida rápida");
-		Console.WriteLine($"Id: {ComidaRapida.Id}");
-		Console.WriteLine($"Nombre: {ComidaRapida.titulo}");
+		var httpResponse = await repositorio.Put("api/ComidasRapidas", ComidaRapida);
+		if(httpResponse.Error)
+		{
+			await mostrarMensaje.MostrarMensajeError(await httpResponse.GetBody());
+		}
+		else
+		{
+			navigationManager.NavigateTo("alimentos");
+		}
 	}
 }

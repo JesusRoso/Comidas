@@ -4,7 +4,7 @@
 
 <div class="form-inline">
 	<div class="form-group mb-2">
-		<label for="titulo" class="sr-only">Titulo</label>
+		<label for="titulo" class="sr-only">Nombre</label>
 		<input @bind-value="titulo" @bind-value:event="oninput" @onkeypress="@((KeyboardEventArgs e)=> TituloKeyPress(e))"
 		type="text" class="form-control" id="titulo" placeholder="Nombre comida" />
 	</div>

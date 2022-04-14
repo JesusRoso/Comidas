@@ -1,5 +1,6 @@
 ﻿@page "/alimentos"
 @inject IRepositorio repositorio
+@inject IMostrarMensajes mostrarMensajes
 
 <h2>Indice Comidas</h2>
 <div class="container">
@@ -29,8 +30,8 @@
                 {
                     <tr>
                         <td>
-                            <a class="btn btn-success">Editar</a>
-                            <button  class="btn btn-danger">Borrar</button>
+                            <a href="/alimentos/editar/@item.Id" class="btn btn-success">Editar</a>
+                            <button @onclick="@(()=>BorrarGenero(item))"  class="btn btn-danger">Borrar</button>
                         </td>
                         <td>@item.titulo</td>
                     </tr>
@@ -51,7 +52,23 @@
     public List<ComidasRapidas> ComidasRapidas { get; set; } = new List<ComidasRapidas>();
     protected async override Task OnInitializedAsync()
     {
+        await Cargar();
+    }
+    private async Task Cargar()
+    {
         var responseHTTP = await repositorio.Get<List<ComidasRapidas>>("api/ComidasRapidas");
         ComidasRapidas = responseHTTP.Response;
-	}
+    }
+    private async Task BorrarGenero(ComidasRapidas comidasRapidas)
+    {
+        var responseHTTP = await repositorio.Delete($"api/ComidasRapidas/{comidasRapidas.Id}");
+        if(responseHTTP.Error)
+        {
+            await mostrarMensajes.MostrarMensajeError(await responseHTTP.GetBody());
+        }
+        else
+        {
+            await Cargar();
+        }
+    }
 }

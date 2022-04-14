@@ -1,5 +1,6 @@
 ﻿@page "/personas"
 @inject IRepositorio repositorio
+@inject IMostrarMensajes mostrarMensajes
 
 <h3>Indice Personas</h3>
 
@@ -28,8 +29,8 @@
                 {
                     <tr>
                         <td>
-                            <a class="btn btn-success">Editar</a>
-                            <button  class="btn btn-danger">Borrar</button>
+                            <a href="/personas/editar/@item.Id" class="btn btn-success">Editar</a>
+                            <button @onclick="@(()=>BorrarGenero(item))" class="btn btn-danger">Borrar</button>
                         </td>
                         <td>@item.Nombre</td>
                     </tr>
@@ -48,9 +49,29 @@
         mostarLista = !mostarLista;
     }
     public List<Persona> Personas { get; set; } = new List<Persona>();
-    protected async override Task OnInitializedAsync() // con este método vamos a tener el listado de personas en la propiedad Personas
-	{
-		var responseHTTP = await repositorio.Get<List<Persona>>("api/personas"); // con esto se obtiene el listado de personas de la base de datos
+
+
+    protected async override Task OnInitializedAsync() 
+    {
+        await Cargar();
+    }
+
+    private async Task Cargar() // con este método vamos a tener el listado de personas en la propiedad Personas
+    {
+        var responseHTTP = await repositorio.Get<List<Persona>>("api/personas"); // con esto se obtiene el listado de personas de la base de datos
 		Personas = responseHTTP.Response;
-	}
+    }
+    private async Task BorrarGenero(Persona persona)
+    {
+        var responseHTTP = await repositorio.Delete($"api/personas/{persona.Id}");
+        if(responseHTTP.Error)
+        {
+            await mostrarMensajes.MostrarMensajeError(await responseHTTP.GetBody());
+        }
+        else
+        {
+            await Cargar();
+        }
+    }
+
 }
