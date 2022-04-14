@@ -11,7 +11,7 @@
 
         public bool Error { get; set; }
         public T Response { get; set; }
-        public HttpResponseMessage HttpResponseMessage { get; set; }
+        public HttpResponseMessage HttpResponseMessage { get; set; } //Representa un mensaje de respuesta HTTP que incluye el código de estado y los datos
 
         public async Task<string> GetBody()
         {

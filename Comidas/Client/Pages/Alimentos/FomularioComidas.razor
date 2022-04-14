@@ -1,4 +1,6 @@
-﻿<EditForm Model="ComidaRapida" OnValidSubmit="OnValidSubmit">
+﻿@inject IRepositorio repositorio
+
+<EditForm Model="ComidaRapida" OnValidSubmit="OnValidSubmit">
 	<DataAnnotationsValidator></DataAnnotationsValidator>
 	<div class="form-group" style="margin-bottom:15px">
 		<label>Nombre:</label>
@@ -17,38 +19,29 @@
 	<div class="form-group">
             <label>Personas:</label>
             <div>
-                <SelectorMultipleTypeahead Context="persona"
+                <SelectorMultipleTypeahead Context="comida"
                                            SearchMethod="BuscarAlimentos" 
                                            ElementosSeleccionados="ComidasSeleccionadas">
                     <MyListTemplate>
-                        @persona.Nombre
+                        @comida.titulo
                     </MyListTemplate>
                     <MyResultTemplate>
-                        @persona.Nombre
+                        @comida.titulo
                     </MyResultTemplate>
                 </SelectorMultipleTypeahead>
             </div>
         </div>
-
-
-	
 </EditForm>
+
 @code 
 {
     [Parameter] public ComidasRapidas ComidaRapida { get; set; }
     [Parameter] public EventCallback OnValidSubmit { get; set; }
-    [Parameter] public List<Persona> ComidasSeleccionadas { get; set; } = new List<Persona>();
+    [Parameter] public List<ComidasRapidas> ComidasSeleccionadas { get; set; } = new List<ComidasRapidas>();
 
-    private async Task<IEnumerable<Persona>> BuscarAlimentos(string searchText)
+    private async Task<IEnumerable<ComidasRapidas>> BuscarAlimentos(string searchText)
     {
-        return new List<Persona>()
-        {
-            new Persona(){Id=1, Nombre="Tom Holland"},
-            new Persona(){Id=2, Nombre="Tom Hanks"}
-        };
+        var responseHTTP = await repositorio.Get<List<ComidasRapidas>>($"api/ComidasRapidas/buscar/{searchText}");
+        return responseHTTP.Response;
     }
-    //private async Task OnDataAnnotationsValidated()
-    //{
-    //    ComidaRapida.ComidaPersonas = ComidasSeleccionadas.Select
-    //}
 }

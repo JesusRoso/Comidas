@@ -2,8 +2,7 @@ body[b-5nak257x78] {
 
 }
 .container[b-5nak257x78]{
-    width: 100%;
-    height: 300px;
+    width: 100%;   
     display: flex;
     flex-direction: row;
     justify-content: space-around;

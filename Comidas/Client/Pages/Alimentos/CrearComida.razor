@@ -11,7 +11,7 @@
 	private ComidasRapidas ComidaRapida = new ComidasRapidas(); 
 	async Task Crear()
 	{
-		var httpResponse = await repositorio.Post("api/comidas", ComidaRapida);
+		var httpResponse = await repositorio.Post("api/ComidasRapidas", ComidaRapida);
 		if(httpResponse.Error)
 		{
 			await mostrarMensajes.MostrarMensajeError(await httpResponse.GetBody());

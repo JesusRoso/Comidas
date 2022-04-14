@@ -1,8 +1,77 @@
 ﻿@page "/personas"
+@inject IRepositorio repositorio
+@inject IMostrarMensajes mostrarMensajes
+
 <h3>Indice Personas</h3>
-<div class="form-group">
-	<a class="btn btn-info" href="personas/crear">Crear personas</a>
+
+<div class="container">
+    <div class="form-group">
+	    <a class="btn btn-info" href="personas/crear">Crear personas</a>
+    </div>
+    <div class="form-group">
+	    <input type="button" class="btn btn-info" @onclick="mostrarListado" value="Listar Personas">
+    </div>
 </div>
+
+@if(mostarLista)
+{
+ <ListadoGenerico Listado="Personas">
+	<HayRegistrosCompleto>
+		<table class="table table-striped">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Nombre</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Personas)
+                {
+                    <tr>
+                        <td>
+                            <a href="/personas/editar/@item.Id" class="btn btn-success">Editar</a>
+                            <button @onclick="@(()=>BorrarGenero(item))" class="btn btn-danger">Borrar</button>
+                        </td>
+                        <td>@item.Nombre</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+	</HayRegistrosCompleto>
+</ListadoGenerico> 
+}
+
+
 @code {
+    bool mostarLista = false;
+    public void mostrarListado()
+    {
+        mostarLista = !mostarLista;
+    }
+    public List<Persona> Personas { get; set; } = new List<Persona>();
+
+
+    protected async override Task OnInitializedAsync() 
+    {
+        await Cargar();
+    }
+
+    private async Task Cargar() // con este método vamos a tener el listado de personas en la propiedad Personas
+    {
+        var responseHTTP = await repositorio.Get<List<Persona>>("api/personas"); // con esto se obtiene el listado de personas de la base de datos
+		Personas = responseHTTP.Response;
+    }
+    private async Task BorrarGenero(Persona persona)
+    {
+        var responseHTTP = await repositorio.Delete($"api/personas/{persona.Id}");
+        if(responseHTTP.Error)
+        {
+            await mostrarMensajes.MostrarMensajeError(await responseHTTP.GetBody());
+        }
+        else
+        {
+            await Cargar();
+        }
+    }
 
 }
