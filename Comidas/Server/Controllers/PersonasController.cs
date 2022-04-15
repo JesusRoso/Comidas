@@ -1,6 +1,8 @@
-﻿using Comidas.Shared.Entidades;
+﻿using Comidas.Server.Helpers;
+using Comidas.Shared.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Comidas.Shared.DTO;
 
 namespace Comidas.Server.Controllers
 {
@@ -14,16 +16,27 @@ namespace Comidas.Server.Controllers
             this.context = context;
         }
 
+        //[HttpGet]
+        //public async Task<ActionResult<List<Persona>>> Get()
+        //{
+        //    return await context.Persona.ToListAsync();
+        //}
         [HttpGet]
-        public async Task<ActionResult<List<Persona>>> Get()
+        public async Task<ActionResult<List<Persona>>> Get([FromQuery] Paginacion paginacion)
         {
-            return await context.Persona.ToListAsync();
+            var queryable = context.Persona.AsQueryable();
+            await HttpContext.InsertarParametrosPaginacionEnRespuesta(queryable, paginacion.CantidadRegistros);
+            return await queryable.Paginar(paginacion).ToListAsync();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Persona>> Get(int id)
         {
-            return await context.Persona.FirstOrDefaultAsync(x => x.Id == id);
+            var persona = await context.Persona.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (persona == null) { return NotFound(); }
+
+            return persona;
         }
         [HttpPut]
         public async Task<ActionResult> Put(Persona persona)
