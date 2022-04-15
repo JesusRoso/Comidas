@@ -78,6 +78,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExpc3RhZG9HZW5lcmljby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Shared/Paginacion.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFBhZ2luYWNpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ASUS/source/repos/Comidas/Comidas/Client/Shared/SelectorMultipleTypeahead.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNlbGVjdG9yTXVsdGlwbGVUeXBlYWhlYWQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
