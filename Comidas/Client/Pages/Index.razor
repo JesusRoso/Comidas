@@ -1,10 +1,10 @@
 ﻿@page "/"
 @inject ServiciosSingleton singleton
 @inject IRepositorio repositorio
-<PageTitle>Index</PageTitle>
-<p role="status">Singleton count: @singleton.Valor</p>
-@*<ListadoComidas ComidaRapida="ComidasRapidas"></ListadoComidas>*@
 
+<PageTitle>Index</PageTitle>
+
+<p role="status">Singleton count: @singleton.Valor</p>
 <div class="container">
 	<div>
 		<a class="btn btn-info container__elements" href="alimentos">Comidas</a>

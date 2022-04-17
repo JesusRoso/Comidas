@@ -1,4 +1,6 @@
-﻿using Comidas.Shared.Entidades;
+﻿using Comidas.Server.Helpers;
+using Comidas.Shared.DTO;
+using Comidas.Shared.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,11 +15,15 @@ namespace Comidas.Server.Controllers
         {
             this.context = context;
         }
+        //paginación
         [HttpGet]
-        public async Task<ActionResult<List<ComidasRapidas>>> Get()
+        public async Task<ActionResult<List<ComidasRapidas>>> Get([FromQuery] Paginacion paginacion)
         {
-            return await context.ComidasRapidas.ToListAsync();
+            var queryable = context.ComidasRapidas.AsQueryable();
+            await HttpContext.InsertarParametrosPaginacionEnRespuesta(queryable, paginacion.CantidadRegistros);
+            return await queryable.Paginar(paginacion).ToListAsync();
         }
+        //filtrar info
         [HttpGet("buscar/{textoBusqueda}")]
         public async Task<ActionResult<List<ComidasRapidas>>> Get(string textoBusqueda)
         {
@@ -26,10 +32,12 @@ namespace Comidas.Server.Controllers
             return await context.ComidasRapidas.Where(x => x.titulo.ToLower().Contains(textoBusqueda)).ToListAsync(); //filta el resultado del titulo y revisa si contiene algo del string de textoBusqueda
         }
 
+
+        //editar info
         [HttpGet("{id}")]
         public async Task<ActionResult<ComidasRapidas>> Get(int id)
         {
-            return await context.ComidasRapidas.FirstOrDefaultAsync(x=>x.Id==id);
+            return await context.ComidasRapidas.FirstOrDefaultAsync(x => x.Id == id); //obtener una comida a través de su Id
         }
         [HttpPut]
         public async Task<ActionResult> Put(ComidasRapidas comidasRapidas)
@@ -38,7 +46,7 @@ namespace Comidas.Server.Controllers
             await context.SaveChangesAsync();
             return NoContent();
         }
-
+        //agg info
         [HttpPost]
         public async Task<ActionResult<int>> Post(ComidasRapidas comidasRapidas)
         {
@@ -46,7 +54,7 @@ namespace Comidas.Server.Controllers
             await context.SaveChangesAsync();
             return comidasRapidas.Id;
         }
-        
+        //eliminar info
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {

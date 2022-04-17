@@ -2,6 +2,7 @@
 @inject IRepositorio repositorio
 @inject IMostrarMensajes mostrarMensajes
 
+
 <h2>Indice Comidas</h2>
 <div class="container">
 	<div class="form-group">
@@ -16,6 +17,9 @@
 </div>
 @if(mostarLista)
 {
+<FiltroComidas ComidasRapidas="ComidasRapidas" ComidasRapidasCompleta="ComidasRapidasCompleta" 
+			  CargaNuevaComida="CargaNuevaComida" CargaNuevaComidaCompleta="LimpiarOnClick"></FiltroComidas>
+<Paginacion PaginaActual="paginaActual" PaginaSeleccionada="paginaSeleccionada" PaginasTotales="paginasTotales"></Paginacion>
 <ListadoGenerico Listado="ComidasRapidas">
 	<HayRegistrosCompleto>
 		<table class="table table-striped">
@@ -31,10 +35,10 @@
                     <tr>
                         <td>
                             <a href="/alimentos/editar/@item.Id" class="btn btn-success">Editar</a>
-                            <button @onclick="@(()=>BorrarGenero(item))"  class="btn btn-danger">Borrar</button>
+                            <button @onclick="@(()=>BorrarComida(item))"  class="btn btn-danger">Borrar</button>
                         </td>
                         <td>@item.titulo</td>
-                    </tr>
+                    </tr> 
                 }
             </tbody>
         </table>
@@ -45,21 +49,53 @@
 
 @code {
     bool mostarLista = false;
-    public void mostrarListado()
-    {
-        mostarLista = !mostarLista;
-    }
+    private int paginaActual = 1; //paginación
+    private int paginasTotales; //paginación
     public List<ComidasRapidas> ComidasRapidas { get; set; } = new List<ComidasRapidas>();
+    public List<ComidasRapidas> ComidasRapidasCompleta { get; set; } = new List<ComidasRapidas>();
+
     protected async override Task OnInitializedAsync()
     {
         await Cargar();
     }
-    private async Task Cargar()
+    public void mostrarListado()
     {
-        var responseHTTP = await repositorio.Get<List<ComidasRapidas>>("api/ComidasRapidas");
-        ComidasRapidas = responseHTTP.Response;
+        mostarLista = !mostarLista;
     }
-    private async Task BorrarGenero(ComidasRapidas comidasRapidas)
+    //Filtro de comida
+    private void CargaNuevaComida(string titulo)
+    {
+        ComidasRapidas = ComidasRapidas.Where(x => x.titulo.ToLower().Contains(titulo.ToLower())).ToList();
+    }
+    private void LimpiarOnClick()
+    {
+        ComidasRapidas = ComidasRapidasCompleta;
+    }
+    //fin filtro de comida
+
+    //paginación
+    private async Task paginaSeleccionada(int pagina)
+    {
+        paginaActual = pagina;
+        await Cargar(pagina);
+    }
+
+    private async Task Cargar(int pagina = 1) // con este método vamos a tener el listado de personas en la propiedad Personas
+    {
+        var responseHttp = await repositorio.Get<List<ComidasRapidas>>($"api/ComidasRapidas?pagina={pagina}"); // con esto se obtiene el listado de personas de la base de datos
+        if (!responseHttp.Error)
+        {
+            ComidasRapidas = responseHttp.Response;
+            ComidasRapidasCompleta = responseHttp.Response;
+            var conteo = responseHttp.HttpResponseMessage.Headers.GetValues("conteo").FirstOrDefault();
+            paginasTotales = int.Parse(responseHttp.HttpResponseMessage.Headers.GetValues("totalPaginas").FirstOrDefault());
+            Console.WriteLine($"conteo {conteo}; paginas: {paginasTotales}");
+        }
+    }
+    //fin paginacion
+
+    //borrar comida
+    private async Task BorrarComida(ComidasRapidas comidasRapidas)
     {
         var responseHTTP = await repositorio.Delete($"api/ComidasRapidas/{comidasRapidas.Id}");
         if(responseHTTP.Error)
@@ -71,4 +107,5 @@
             await Cargar();
         }
     }
+    //fin borrar comida
 }

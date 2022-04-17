@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3HNB29Mhf58/tXPe8A4O6pYUzX9eYpB6xXPXWhgzaKc=",
+  "Hash": "b1TXvJKZP46hi1Bd9GtnBHWAhRCiHDuBQPUR2LDkUQ0=",
   "Source": "Comidas.Server",
   "BasePath": "_content/Comidas.Server",
   "Mode": "Default",
@@ -28,6 +28,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\6.0.4\\staticwebassets\\AuthenticationService.js",
+      "SourceId": "Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\6.0.4\\staticwebassets\\",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "RelativePath": "AuthenticationService.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\6.0.4\\staticwebassets\\AuthenticationService.js"
+    },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.boot.json",
       "SourceId": "Comidas.Client",
@@ -281,7 +298,24 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
+      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.4\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\6.0.4\\lib\\net6.0\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
@@ -298,7 +332,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.Components.dll"
+      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.4\\lib\\net6.0\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
@@ -315,7 +349,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.Components.Forms.dll"
+      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.4\\lib\\net6.0\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
@@ -332,7 +366,24 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.Components.Web.dll"
+      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.4\\lib\\net6.0\\Microsoft.AspNetCore.Components.Web.dll"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\6.0.4\\lib\\net6.0\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
@@ -366,7 +417,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.Metadata.dll"
+      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.4\\lib\\net6.0\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.CSharp.dll",
@@ -638,7 +689,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.jsinterop\\6.0.3\\lib\\net6.0\\Microsoft.JSInterop.dll"
+      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.jsinterop\\6.0.4\\lib\\net6.0\\Microsoft.JSInterop.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
@@ -3633,6 +3684,23 @@
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.DataContractSerialization.dll"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\0WKiSEn7.gz",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\10gwzwmZ.gz",
       "SourceId": "Comidas.Client",
       "SourceType": "Project",
@@ -3667,6 +3735,23 @@
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.FileSystem.Watcher.dll"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\2+BQ5ACK.gz",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\2apomV2H.gz",
       "SourceId": "Comidas.Client",
       "SourceType": "Project",
@@ -3682,23 +3767,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.CoreLib.dll"
-    },
-    {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\2bEzhTS3.gz",
-      "SourceId": "Comidas.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\3N33lt6+.gz",
@@ -4005,23 +4073,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Resources.Writer.dll"
-    },
-    {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\aidzraFY.gz",
-      "SourceId": "Comidas.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\AJrY3ntw.gz",
@@ -4430,6 +4481,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ValueTuple.dll"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\ePg7KZGt.gz",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\Erodhh+t.gz",
@@ -5163,23 +5231,6 @@
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.dll"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\iW2UOqnN.gz",
-      "SourceId": "Comidas.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
-    },
-    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\J3Q19cnj.gz",
       "SourceId": "Comidas.Client",
       "SourceType": "Project",
@@ -5520,6 +5571,23 @@
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Win32.Primitives.dll"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\lAPEU7NY.gz",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\LcEd3K0J.gz",
       "SourceId": "Comidas.Client",
       "SourceType": "Project",
@@ -5705,23 +5773,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.FileVersionInfo.dll"
-    },
-    {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\MrP3tnvW.gz",
-      "SourceId": "Comidas.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\mSPW9zKF.gz",
@@ -6013,6 +6064,23 @@
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Data.Common.dll"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\OVq+fCOY.gz",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\ow5qEMQ8.gz",
       "SourceId": "Comidas.Client",
       "SourceType": "Project",
@@ -6234,6 +6302,23 @@
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Sockets.dll"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\rZPgDQ1I.gz",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\SBb9zOpR.gz",
       "SourceId": "Comidas.Client",
       "SourceType": "Project",
@@ -6300,23 +6385,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.TraceSource.dll"
-    },
-    {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\tddjigzg.gz",
-      "SourceId": "Comidas.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\tJSCfukx.gz",
@@ -6387,6 +6455,23 @@
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.Annotations.dll"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\u0ULct33.gz",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\UEm7Ra+h.gz",
       "SourceId": "Comidas.Client",
       "SourceType": "Project",
@@ -6453,6 +6538,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.Immutable.dll"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\UrGIMz9T.gz",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\uwEHEkUp.gz",
@@ -6606,23 +6708,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Tasks.Dataflow.dll"
-    },
-    {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\XqyeR9eh.gz",
-      "SourceId": "Comidas.Client",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\xsqZmWxL.gz",

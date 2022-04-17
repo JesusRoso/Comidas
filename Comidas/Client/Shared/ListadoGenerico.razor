@@ -23,17 +23,17 @@
 }
 else
 {
-		@if(HayRegistros!=null)
+	@if(HayRegistros!=null)
+	{
+		@foreach (var elemento in Listado)
 		{
-			@foreach (var elemento in Listado)
-			{
-				@HayRegistros(elemento)
-			}
+			@HayRegistros(elemento)
 		}
-		else
-		{
-			@HayRegistrosCompleto
-		}
+	}
+	else
+	{
+		@HayRegistrosCompleto
+	}
 }
 @code 
 {

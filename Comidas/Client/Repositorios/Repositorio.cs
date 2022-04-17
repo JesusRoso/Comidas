@@ -6,7 +6,7 @@ namespace Comidas.Client.Repositorios
 {
     public class Repositorio : IRepositorio
     {
-        private readonly HttpClient httpClient;
+        private readonly HttpClient httpClient; //sirve para tener una calse especializada para realizar peticiones http
 
         public Repositorio(HttpClient httpClient)
         {
@@ -60,12 +60,12 @@ namespace Comidas.Client.Repositorios
         public List<ComidasRapidas> ObtenerComidas()
         {
             return new List<ComidasRapidas>()
-        {
-            new ComidasRapidas(){titulo = "Perro Caliente",precio = 2500},
-            new ComidasRapidas(){titulo = "Hamburguesa",precio = 8500},
-            new ComidasRapidas(){titulo = "Pizza",precio = 4500},
-            new ComidasRapidas(){titulo = "Salchipapa",precio = 6500}
-        };
+            {
+                //new ComidasRapidas(){titulo = "Perro Caliente",precio = 2500},
+                //new ComidasRapidas(){titulo = "Hamburguesa",precio = 8500},
+                //new ComidasRapidas(){titulo = "Pizza",precio = 4500},
+                //new ComidasRapidas(){titulo = "Salchipapa",precio = 6500}
+            };
         }
     }
 }

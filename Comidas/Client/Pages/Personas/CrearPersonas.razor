@@ -2,6 +2,8 @@
 @inject IRepositorio repositorio
 @inject NavigationManager navigationManager
 @inject IMostrarMensajes mostrarMensajes
+@attribute [Authorize(Roles="admin")] 
+@*Este atributo (Authorize) solo sirve para componentes ruteables (con la directiva page)*@
 
 <FormularioPersonas Persona="Persona" OnValidSubmit="Crear"></FormularioPersonas>
 
