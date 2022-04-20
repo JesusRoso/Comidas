@@ -28,7 +28,12 @@ namespace BlazorComidas.Client
             services.AddScoped<IRepositorio,Repositorio>();
             services.AddScoped<IMostrarMensajes,MostrarMensajes>();
             services.AddApiAuthorization();
-            services.AddScoped<AuthenticationStateProvider, ProveedorAutenticacionPrueba>();
+            services.AddScoped<ProveedorAutenticacionJWT>();
+            services.AddScoped<AuthenticationStateProvider, ProveedorAutenticacionJWT>(
+                provider => provider.GetRequiredService<ProveedorAutenticacionJWT>());
+            services.AddScoped<ILoginService, ProveedorAutenticacionJWT>(
+                provider => provider.GetRequiredService<ProveedorAutenticacionJWT>());
+            services.AddScoped<RenovadorToken>();
         }
     }
 

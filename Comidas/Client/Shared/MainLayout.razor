@@ -1,4 +1,7 @@
 ﻿@inherits LayoutComponentBase
+@inject Comidas.Client.Auth.RenovadorToken renovadorToken
+@inject IJSRuntime js
+@inject NavigationManager navigationManager
 
 <div class="page">
     <div class="sidebar">
@@ -7,7 +10,7 @@
 
     <main>
         <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+            <EnlacesLogin></EnlacesLogin>
         </div>
 
         <article class="content px-4">
@@ -20,11 +23,26 @@
     </main>
 </div>
 @code{
+    //lo que está comentado aquí es para el logout automático, que no funciona 
+    //[CascadingParameter] public Task<AuthenticationState> AuthenticationState { get; set; }
     AppState appState = new AppState();
     public class AppState
     {
         public string color { get; set; } = "red";
         public string size { get; set; } = "18";
     }
-    
+    protected override async Task OnInitializedAsync()
+    {
+        //await js.InicializarTimerInactivo(DotNetObjectReference.Create(this)); 
+        renovadorToken.Iniciar();
+    }
+    //[JSInvokable]
+    //public async Task Logout()
+    //{
+    //    var authState = await AuthenticationState;
+    //    if(authState.User.Identity.IsAuthenticated)
+    //    {
+    //        navigationManager.NavigateTo("logout");
+    //    }
+    //}
 }

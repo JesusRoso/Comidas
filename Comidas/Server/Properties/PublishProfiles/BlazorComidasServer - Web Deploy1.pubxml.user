@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAr6gw57Xoa0aey1FHsw0XygAAAAACAAAAAAAQZgAAAAEAACAAAACUPxFT6sQjwjkX4mcKMkcfBd41BiqjOx/wH6W8wU18PQAAAAAOgAAAAAIAACAAAADuyXxgJyw+PPs8g/2amw3JIrQd92wrhS/PkTLmik/aWYAAAAAbAMXjvmpzRkTmAGBuYQ0sMO8Ww0nKvv5SZgD9djuZ/RvQKIygnwH4PhlAVZAtLI6xDB9xitnJ3+N+dXzjtqbY47ldNrI3lbeDtLr6gaIGo8cwgGMSwtS7gAhzfxJienMSwrOgxMwJBD7pJol1ZiA8Y+j2LG2V9MFDGz4Brl5Tv0AAAADhb2Td5SQPOfbggIoHZStafZRlRpGz+i7CGlDbxTs+d+L6Zl1sRA88I6DfFb4NplN31/+IG6nOurxwGgUxdAX3</EncryptedPassword>
+    <History>True|2022-04-20T22:54:56.6382809Z;True|2022-04-20T15:19:44.0737200-05:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="Comidas.Server.ApplicationDbContext">
+      <Value>Data Source=tcp:comidasserverdbserver.database.windows.net,1433%3bInitial Catalog=Comidas.Server_db%3bUser Id=jesusroso%40comidasserverdbserver%3bPassword=Jr99111203446.</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

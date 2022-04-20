@@ -1,0 +1,10 @@
+body[b-00op1i68tf] {
+}
+.container[b-00op1i68tf] {
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+}

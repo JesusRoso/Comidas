@@ -2,6 +2,8 @@
 using System.Security.Claims;
 using System.Text;
 using Comidas.Shared.DTO;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -60,6 +62,22 @@ namespace Comidas.Server.Controllers
                 return BadRequest("Username or password invalid");
             }
         }
+
+        [HttpGet("RenovarToken")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public async Task<ActionResult<UserToken>> Renovar()
+        {
+            var userInfo = new UserInfo()
+            {
+                Email = HttpContext.User.Identity.Name
+            };
+
+            var usuario = await _userManager.FindByEmailAsync(userInfo.Email);
+            var roles = await _userManager.GetRolesAsync(usuario);
+
+            return BuildToken(userInfo, roles);
+        }
+
 
         private UserToken BuildToken(UserInfo userInfo, IList<string> roles)
         {

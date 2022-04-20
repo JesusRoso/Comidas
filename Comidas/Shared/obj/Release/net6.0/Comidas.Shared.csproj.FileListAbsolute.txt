@@ -1,0 +1,12 @@
+C:\Users\ASUS\source\repos\Comidas\Comidas\Shared\bin\Release\net6.0\Comidas.Shared.deps.json
+C:\Users\ASUS\source\repos\Comidas\Comidas\Shared\bin\Release\net6.0\Comidas.Shared.dll
+C:\Users\ASUS\source\repos\Comidas\Comidas\Shared\bin\Release\net6.0\Comidas.Shared.pdb
+C:\Users\ASUS\source\repos\Comidas\Comidas\Shared\obj\Release\net6.0\Comidas.Shared.csproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\Comidas\Comidas\Shared\obj\Release\net6.0\Comidas.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\source\repos\Comidas\Comidas\Shared\obj\Release\net6.0\Comidas.Shared.AssemblyInfoInputs.cache
+C:\Users\ASUS\source\repos\Comidas\Comidas\Shared\obj\Release\net6.0\Comidas.Shared.AssemblyInfo.cs
+C:\Users\ASUS\source\repos\Comidas\Comidas\Shared\obj\Release\net6.0\Comidas.Shared.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\Comidas\Comidas\Shared\obj\Release\net6.0\Comidas.Shared.dll
+C:\Users\ASUS\source\repos\Comidas\Comidas\Shared\obj\Release\net6.0\refint\Comidas.Shared.dll
+C:\Users\ASUS\source\repos\Comidas\Comidas\Shared\obj\Release\net6.0\Comidas.Shared.pdb
+C:\Users\ASUS\source\repos\Comidas\Comidas\Shared\obj\Release\net6.0\ref\Comidas.Shared.dll

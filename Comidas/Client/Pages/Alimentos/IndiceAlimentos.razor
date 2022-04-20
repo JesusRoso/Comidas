@@ -8,9 +8,6 @@
 	<div class="form-group">
 		<a class="btn btn-info" href="alimentos/crear">Crear Comida</a>
 	</div>
-	<div class="form-group">
-		<a class="btn btn-info" href="alimentos/buscar">Filtrar Comida</a>
-	</div>
     <div class="form-group">
         <input type="button" class="btn btn-info" @onclick="mostrarListado" value="Listar Comida">
 	</div>
@@ -34,8 +31,12 @@
                 {
                     <tr>
                         <td>
-                            <a href="/alimentos/editar/@item.Id" class="btn btn-success">Editar</a>
-                            <button @onclick="@(()=>BorrarComida(item))"  class="btn btn-danger">Borrar</button>
+                            <AuthorizeView Roles="admin"> 
+                                <Authorized>
+                                    <a href="/alimentos/editar/@item.Id" class="btn btn-success">Editar</a>
+                                    <button @onclick="@(()=>BorrarComida(item))"  class="btn btn-danger">Borrar</button>
+                                </Authorized>
+                            </AuthorizeView>
                         </td>
                         <td>@item.titulo</td>
                     </tr> 
@@ -104,6 +105,7 @@
         }
         else
         {
+            await mostrarMensajes.MostrarMensajeExitoso("Se ha eliminado correctamente");
             await Cargar();
         }
     }

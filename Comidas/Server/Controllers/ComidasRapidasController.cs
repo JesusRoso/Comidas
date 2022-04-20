@@ -1,6 +1,8 @@
 ﻿using Comidas.Server.Helpers;
 using Comidas.Shared.DTO;
 using Comidas.Shared.Entidades;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,6 +10,7 @@ namespace Comidas.Server.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin")]
     public class ComidasRapidasController: ControllerBase
     {
         private readonly ApplicationDbContext context;
@@ -17,6 +20,7 @@ namespace Comidas.Server.Controllers
         }
         //paginación
         [HttpGet]
+        [AllowAnonymous] //Cualquier usuario autenticado o no puede usar este endPoint
         public async Task<ActionResult<List<ComidasRapidas>>> Get([FromQuery] Paginacion paginacion)
         {
             var queryable = context.ComidasRapidas.AsQueryable();
@@ -25,6 +29,7 @@ namespace Comidas.Server.Controllers
         }
         //filtrar info
         [HttpGet("buscar/{textoBusqueda}")]
+        [AllowAnonymous] //Cualquier usuario autenticado o no puede usar este endPoint
         public async Task<ActionResult<List<ComidasRapidas>>> Get(string textoBusqueda)
         {
             if (string.IsNullOrWhiteSpace(textoBusqueda)) { return new List<ComidasRapidas>(); }
@@ -35,6 +40,7 @@ namespace Comidas.Server.Controllers
 
         //editar info
         [HttpGet("{id}")]
+        [AllowAnonymous] //Cualquier usuario autenticado o no puede usar este endPoint
         public async Task<ActionResult<ComidasRapidas>> Get(int id)
         {
             return await context.ComidasRapidas.FirstOrDefaultAsync(x => x.Id == id); //obtener una comida a través de su Id

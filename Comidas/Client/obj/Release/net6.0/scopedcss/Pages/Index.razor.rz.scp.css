@@ -1,0 +1,13 @@
+body[b-5nak257x78] {
+
+}
+.container[b-5nak257x78]{
+    width: 100%;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+}
+.container__elements[b-5nak257x78]{
+    width: 200px;
+}

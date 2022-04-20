@@ -198,8 +198,8 @@
       "mscorlib.dll": "sha256-tSv6NEbBsHuM5P3AUJGybafS0hxrXlzDmmcyG2eGk3I=",
       "netstandard.dll": "sha256-klcvWVyHimPfDxg6W1A076EKpCB5ySxjtc7sxJEsGgE=",
       "System.Private.CoreLib.dll": "sha256-Y8kdbfPQ0YoYLGbOgzRmoVsnuMYNlA1hvLvDWFTtzrk=",
-      "Comidas.Shared.dll": "sha256-pHmWwXZlTJLKmQHvHytxXq0IrqJR3XbDNrsUQa4ExfA=",
-      "Comidas.Client.dll": "sha256-XqnKXY4\/NfgkI7GAuj3nIhu0n87dyKIaQ\/fOc+nVOBw="
+      "Comidas.Shared.dll": "sha256-VRJiyRwDUiBQoJC+5V4Xz6h2EmbOUqHjxZuc1Qe4a5Y=",
+      "Comidas.Client.dll": "sha256-cR1PwEZh8Xp9tgCvhLKBsHXtSoRQgJPozP8YD2EW3tY="
     },
     "extensions": null,
     "lazyAssembly": {
@@ -207,8 +207,8 @@
     },
     "libraryInitializers": null,
     "pdb": {
-      "Comidas.Shared.pdb": "sha256-EEhBY+JnYIXDzH8yuatScrcogDyrFSp8+1P4O59oh2U=",
-      "Comidas.Client.pdb": "sha256-HWieIAm\/c7ERHtfvgNOs\/UFgE\/KE5\/w2\/IhGNqfE\/jU="
+      "Comidas.Shared.pdb": "sha256-2nkAt3x2lFwW5ach5JMjyu8ILCcSkm\/99LBuixMS6Gg=",
+      "Comidas.Client.pdb": "sha256-I9PlLrYemgOzEFi35+krETbqFDtnwGE20RPtzqWep0k="
     },
     "runtime": {
       "dotnet.6.0.3.s5k6nh0f4m.js": "sha256-pRmcHKZN4T\/YbX9dj6ITT4sNtkJ9w07OLcwl4645nPg=",

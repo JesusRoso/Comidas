@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "g6wl3HczQMf5cyEV24FB3AA3xdtlpLpkqyTOw6/XahMwD9BTeQVihSXDx4WhwfWPHQQxAkDXKkzm8P/YL/llOQ==",
+  "dgSpecHash": "aWjBiezk804jn9SorQYjB4ZXwLO6ICTiUsjE1jybC1F2B8BK70drSBFz0L3Tjx/FLcHAeJ4lPXBMPacjNYCU4g==",
   "success": true,
   "projectFilePath": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Server\\Comidas.Server.csproj",
   "expectedPackageFiles": [
@@ -28,7 +28,7 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.4\\microsoft.entityframeworkcore.analyzers.6.0.4.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.3\\microsoft.entityframeworkcore.design.6.0.3.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.4\\microsoft.entityframeworkcore.relational.6.0.4.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.3\\microsoft.entityframeworkcore.sqlserver.6.0.3.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.4\\microsoft.entityframeworkcore.sqlserver.6.0.4.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.3\\microsoft.entityframeworkcore.tools.6.0.3.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hO2xOyEHpdMgJUvRGuQv9TLSCyzI41+RV8nvP++6oAs=",
+  "Hash": "+rWnUBjt7RjaK8ZDmqEAnendq05j01OvHSxDPo+kCpk=",
   "Source": "Comidas.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -187,23 +187,6 @@
       "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.3\\runtimes\\browser-wasm\\native\\dotnet.wasm"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "Comidas.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt.dat",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "native",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.3\\runtimes\\browser-wasm\\native\\icudt.dat"
-    },
-    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "SourceId": "Comidas.Client",
       "SourceType": "Computed",
@@ -253,6 +236,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.3\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt.dat",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "native",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.3\\runtimes\\browser-wasm\\native\\icudt.dat"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MathNet.Numerics.dll",
@@ -7072,6 +7072,23 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Comidas.Client",
       "SourceType": "Discovered",
@@ -7172,23 +7189,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
-    },
-    {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "Comidas.Client",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
