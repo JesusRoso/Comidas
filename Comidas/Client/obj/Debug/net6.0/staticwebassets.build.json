@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+rWnUBjt7RjaK8ZDmqEAnendq05j01OvHSxDPo+kCpk=",
+  "Hash": "FsGkZ+oYrB/+kZaq5ocpjatNxzxotwLGa6dyah+N9pk=",
   "Source": "Comidas.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -65,7 +65,7 @@
       "AssetTraitValue": "boot",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.3\\build\\net6.0\\blazor.webassembly.js"
+      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.4\\build\\net6.0\\blazor.webassembly.js"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Comidas.Client.dll",
@@ -187,6 +187,23 @@
       "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.3\\runtimes\\browser-wasm\\native\\dotnet.wasm"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt.dat",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "native",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.3\\runtimes\\browser-wasm\\native\\icudt.dat"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "SourceId": "Comidas.Client",
       "SourceType": "Computed",
@@ -236,23 +253,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.3\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
-    },
-    {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "Comidas.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt.dat",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "native",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.3\\runtimes\\browser-wasm\\native\\icudt.dat"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MathNet.Numerics.dll",
@@ -388,7 +388,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.Components.WebAssembly.dll"
+      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.4\\lib\\net6.0\\Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
@@ -694,7 +694,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.3\\lib\\net6.0\\Microsoft.JSInterop.WebAssembly.dll"
+      "OriginalItemSpec": "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.4\\lib\\net6.0\\Microsoft.JSInterop.WebAssembly.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.VisualBasic.Core.dll",
@@ -3638,23 +3638,6 @@
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.Xml.Linq.dll"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\+qJj+yUD.gz",
-      "SourceId": "Comidas.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/blazor.webassembly.js.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js"
-    },
-    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\+YqojYq9.gz",
       "SourceId": "Comidas.Client",
       "SourceType": "Computed",
@@ -3893,21 +3876,21 @@
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Linq.Expressions.dll"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\5Wmq++IV.gz",
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\5v9o+1k5.gz",
       "SourceId": "Comidas.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.dll.gz",
+      "RelativePath": "_framework/Microsoft.JSInterop.WebAssembly.dll.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
+      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll"
+      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\6JNPk+An.gz",
@@ -4027,6 +4010,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XPath.dll"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\a62Jw2HZ.gz",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/blazor.webassembly.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\a6lKkssw.gz",
@@ -4503,23 +4503,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Emit.Lightweight.dll"
-    },
-    {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\eSTOSK73.gz",
-      "SourceId": "Comidas.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.JSInterop.WebAssembly.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\eTnnoPN9.gz",
@@ -5676,6 +5659,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Comidas.Client.pdb"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\mAj+tI1J.gz",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Debug\\net6.0\\build-gz\\mJ11QjUy.gz",
@@ -7072,23 +7072,6 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "Comidas.Client",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
-    },
-    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Comidas.Client",
       "SourceType": "Discovered",
@@ -7191,6 +7174,23 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "Comidas.Client",
       "SourceType": "Discovered",
@@ -7259,6 +7259,23 @@
       "OriginalItemSpec": "wwwroot\\icon-192.png"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\icon-512.png",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "icon-512.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icon-512.png"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\index.html",
       "SourceId": "Comidas.Client",
       "SourceType": "Discovered",
@@ -7308,6 +7325,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Script.js"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\manifest.json",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "manifest.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\manifest.json"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\service-worker.js",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "service-worker.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\service-worker.js"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\service-worker.published.js",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "service-worker.published.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\service-worker.published.js"
     }
   ]
 }

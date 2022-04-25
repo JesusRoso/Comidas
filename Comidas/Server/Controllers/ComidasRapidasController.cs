@@ -10,13 +10,15 @@ namespace Comidas.Server.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin")]
+    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin")] 
     public class ComidasRapidasController: ControllerBase
     {
         private readonly ApplicationDbContext context;
-        public ComidasRapidasController(ApplicationDbContext context)
+        private readonly NotificacionesService notificacionesService;
+        public ComidasRapidasController(ApplicationDbContext context, NotificacionesService notificacionesService)
         {
             this.context = context;
+            this.notificacionesService = notificacionesService;
         }
         //paginación
         [HttpGet]
@@ -58,6 +60,9 @@ namespace Comidas.Server.Controllers
         {
             context.Add(comidasRapidas);
             await context.SaveChangesAsync();
+
+            await notificacionesService.EnviarNotificacionPeliculaEnCartelera(comidasRapidas);
+
             return comidasRapidas.Id;
         }
         //eliminar info

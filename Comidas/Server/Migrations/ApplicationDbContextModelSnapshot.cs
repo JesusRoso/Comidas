@@ -62,6 +62,31 @@ namespace Comidas.Server.Migrations
                     b.ToTable("ComidasRapidas", (string)null);
                 });
 
+            modelBuilder.Entity("Comidas.Shared.Entidades.Notificacion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Auth")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("P256dh")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("URL")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Notificaciones");
+                });
+
             modelBuilder.Entity("Comidas.Shared.Entidades.Persona", b =>
                 {
                     b.Property<int>("Id")
@@ -113,7 +138,7 @@ namespace Comidas.Server.Migrations
                         new
                         {
                             Id = "89086180-b978-4f90-9dbd-a7040bc93f41",
-                            ConcurrencyStamp = "c4002263-bf83-4da5-bbcb-535773f21366",
+                            ConcurrencyStamp = "a3507df9-d053-4596-b3fe-7b77a75452fc",
                             Name = "admin",
                             NormalizedName = "admin"
                         });
@@ -207,24 +232,6 @@ namespace Comidas.Server.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "cf5fae49-64dc-4da9-8757-52f1e5664c29",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "c7fc5e16-0f5e-4cf5-be84-85cb85c68d58",
-                            Email = "jdrosof@gmail.com",
-                            EmailConfirmed = true,
-                            LockoutEnabled = false,
-                            NormalizedEmail = "jdrosof@gmail.com",
-                            NormalizedUserName = "jdrosof@gmail.com",
-                            PasswordHash = "AQAAAAEAACcQAAAAEKCQgzkN75DihSWMnSrjeVlqYogvPdM+HiFwawzEOzDmHkmxjdlONrlqFWkHErtu1g==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "ba36395f-b341-472c-b4f8-aacdf1504db2",
-                            TwoFactorEnabled = false,
-                            UserName = "jdrosof@gmail.com"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -287,13 +294,6 @@ namespace Comidas.Server.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = "cf5fae49-64dc-4da9-8757-52f1e5664c29",
-                            RoleId = "89086180-b978-4f90-9dbd-a7040bc93f41"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>

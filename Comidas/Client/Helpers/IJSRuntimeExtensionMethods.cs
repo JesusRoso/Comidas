@@ -1,4 +1,5 @@
-﻿using Microsoft.JSInterop;
+﻿using Comidas.Shared.Entidades;
+using Microsoft.JSInterop;
 
 namespace Comidas.Client.Helpers
 {
@@ -10,7 +11,20 @@ namespace Comidas.Client.Helpers
         //{
         //    await js.InvokeVoidAsync("timerInactivo", dotNetObjectReference);
         //}
-		public static async ValueTask<bool> Confirm(this IJSRuntime js, string mensaje )
+        public async static ValueTask<string> ObtenerEstatusPermisoNotificaciones(this IJSRuntime js)
+        {
+            return await js.InvokeAsync<string>("obtenerEstatusPermisoNotificaciones");
+        }
+        public async static ValueTask<Notificacion> SuscribirANotificaciones(this IJSRuntime js)
+        {
+            return await js.InvokeAsync<Notificacion>("suscribirUsuario");
+        }
+
+        public async static ValueTask<Notificacion> DesuscribirANotificaciones(this IJSRuntime js)
+        {
+            return await js.InvokeAsync<Notificacion>("desuscribirUsuario");
+        }
+        public static async ValueTask<bool> Confirm(this IJSRuntime js, string mensaje )
 		{
 			return await js.InvokeAsync<bool>("confirm", mensaje);
 		}

@@ -12,7 +12,7 @@
       "Microsoft.AspNetCore.Components.Authorization.dll": "sha256-51ABG+tb1xLWFq1hj1MAunwXoekTaXPQsH7FsX1FksM=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-WApptBNmFJ1+dCg+jm360NFshcv7dvfzyBGl8rECTt8=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-Za1yJA2MY8T6DwapDEeBN9xCYb62MctrT1HKsNSePoE=",
-      "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-XwPAlBNXw8oEUY4SlFxHYJVJEQWyCNt9P2vWVP\/DuiU=",
+      "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-izxJlD6frDIMfvXz53B+rqp7FpLgQypiJO+1kqTMPf4=",
       "Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll": "sha256-3Q+fCzL21k+wOp71PBffFyNtjl\/XThD5VcXoIgZd6kg=",
       "Microsoft.AspNetCore.Metadata.dll": "sha256-iqHFPB3TeviSbUBknWFRzrVtYoeM5yjCHZzUVHF8vuc=",
       "Microsoft.Extensions.Configuration.dll": "sha256-c8yYhfrOBLEnOBglLTu9peXSbJDwFpuT4UQiXSv28Og=",
@@ -30,7 +30,7 @@
       "Microsoft.Extensions.Options.dll": "sha256-eGESyy9mRu8RcCGajAu4E8nxSmeB5nxiZkFPVaZ5Vl0=",
       "Microsoft.Extensions.Primitives.dll": "sha256-jOmoWSfsdQexH\/6QCA56gR1RMEqeix2iDDUBWbpAOQI=",
       "Microsoft.JSInterop.dll": "sha256-jk2\/Vyub2GwMGkeIaCH7i0wYYpcirlDPEBjrjmB47Es=",
-      "Microsoft.JSInterop.WebAssembly.dll": "sha256-jjvkA2MkUDycoIIikuTOZFtCe2gJtIJl1sT7Vif+dgM=",
+      "Microsoft.JSInterop.WebAssembly.dll": "sha256-9fmAKBOzIs7ySpwatFoAUhMgaJtTQvGN5+TArCHX9QE=",
       "System.IO.Pipelines.dll": "sha256-OXr1SqT\/FRQmnxVa6n811yUyJraU4tzQs5skNCiDmiM=",
       "Microsoft.CSharp.dll": "sha256-bhhqi8sRBx1N8jw2O6V+Z3nkVobmjj2csZa2TXF9pS4=",
       "Microsoft.VisualBasic.Core.dll": "sha256-E7+QttmvONEAnNyUzmOR+lGf6ISeYZNBpRDS3D3ArXI=",
@@ -198,8 +198,8 @@
       "mscorlib.dll": "sha256-tSv6NEbBsHuM5P3AUJGybafS0hxrXlzDmmcyG2eGk3I=",
       "netstandard.dll": "sha256-klcvWVyHimPfDxg6W1A076EKpCB5ySxjtc7sxJEsGgE=",
       "System.Private.CoreLib.dll": "sha256-Y8kdbfPQ0YoYLGbOgzRmoVsnuMYNlA1hvLvDWFTtzrk=",
-      "Comidas.Shared.dll": "sha256-VRJiyRwDUiBQoJC+5V4Xz6h2EmbOUqHjxZuc1Qe4a5Y=",
-      "Comidas.Client.dll": "sha256-cR1PwEZh8Xp9tgCvhLKBsHXtSoRQgJPozP8YD2EW3tY="
+      "Comidas.Shared.dll": "sha256-KJJpyOXp4ba3uN4jBilt9XJqJ65CdUvifXofME+5XZU=",
+      "Comidas.Client.dll": "sha256-FXVSdDhuBXt2\/JlAU9bP7dNcGpEiLJ9d3HtwloZ4E\/A="
     },
     "extensions": null,
     "lazyAssembly": {
@@ -207,8 +207,8 @@
     },
     "libraryInitializers": null,
     "pdb": {
-      "Comidas.Shared.pdb": "sha256-2nkAt3x2lFwW5ach5JMjyu8ILCcSkm\/99LBuixMS6Gg=",
-      "Comidas.Client.pdb": "sha256-I9PlLrYemgOzEFi35+krETbqFDtnwGE20RPtzqWep0k="
+      "Comidas.Shared.pdb": "sha256-0jb\/P9PwMIUeHSSb4n7mlOGSizvN9AeWX28aZgny2MA=",
+      "Comidas.Client.pdb": "sha256-1AXJomID5Onbu5YtCIucncOZ15nPyQQK1rgWmJhn6OE="
     },
     "runtime": {
       "dotnet.6.0.3.s5k6nh0f4m.js": "sha256-pRmcHKZN4T\/YbX9dj6ITT4sNtkJ9w07OLcwl4645nPg=",

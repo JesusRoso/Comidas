@@ -36,14 +36,15 @@ namespace Comidas.Server
                 EmailConfirmed = true,
                 PasswordHash=hasher.HashPassword(null, "88917be8-cb36-47c5-b072-Cca7ee8d9!ee")};
 
-            modelBuilder.Entity<IdentityUser>().HasData(usuarioAdmin);
-            modelBuilder.Entity<IdentityUserRole<string>>()
-                .HasData(new IdentityUserRole<string>() { RoleId = roleAdminId, UserId = usuarioAdminId });
+            //modelBuilder.Entity<IdentityUser>().HasData(usuarioAdmin);
+            //modelBuilder.Entity<IdentityUserRole<string>>()
+            //    .HasData(new IdentityUserRole<string>() { RoleId = roleAdminId, UserId = usuarioAdminId });
             modelBuilder.Entity<IdentityRole>().HasData(roleAdmin);
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<ComidaPersona> ComidasPersonas { get; set; }
         public DbSet<Persona> Persona { get; set; }
+        public DbSet<Notificacion> Notificaciones { get; set; }
         public virtual DbSet<ComidasRapidas> ComidasRapidas { get; set; }
     }
 }

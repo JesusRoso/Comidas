@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "efMGdOMA3H6zRYdFoGpEZkEP1orxIKoM0GcUsZGCEfo=",
+  "Hash": "3VqCI+9zapJ1Ie8fuWP0wsQFyQU1yabUYNqa6jZZh/g=",
   "Source": "Comidas.Server",
   "BasePath": "_content/Comidas.Server",
   "Mode": "Default",
@@ -7016,6 +7016,40 @@
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Release\\net6.0\\scopedcss\\bundle\\Comidas.Client.styles.css"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Release\\net6.0\\service-worker\\service-worker.js",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Release\\net6.0\\service-worker\\",
+      "BasePath": "/",
+      "RelativePath": "service-worker.js",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorServiceWorker",
+      "AssetTraitValue": "ServiceWorkerJs",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "wwwroot\\service-worker.js"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\obj\\Release\\net6.0\\service-worker-assets.js.build",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\bin\\Release\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "service-worker-assets.js",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorServiceWorker",
+      "AssetTraitValue": "ServiceWorkerManifest",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "obj\\Release\\net6.0\\service-worker-assets.js.build"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\css\\app.css",
       "SourceId": "Comidas.Client",
       "SourceType": "Project",
@@ -7254,6 +7288,23 @@
       "OriginalItemSpec": "wwwroot\\icon-192.png"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\icon-512.png",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "icon-512.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icon-512.png"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\index.html",
       "SourceId": "Comidas.Client",
       "SourceType": "Project",
@@ -7303,6 +7354,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Script.js"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\manifest.json",
+      "SourceId": "Comidas.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Comidas\\Comidas\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "manifest.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\manifest.json"
     }
   ]
 }
