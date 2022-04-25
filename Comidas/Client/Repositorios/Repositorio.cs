@@ -6,7 +6,7 @@ namespace Comidas.Client.Repositorios
 {
     public class Repositorio : IRepositorio
     {
-        private readonly HttpClient httpClient;
+        private readonly HttpClient httpClient; //sirve para tener una calse especializada para realizar peticiones http
 
         public Repositorio(HttpClient httpClient)
         {
@@ -60,12 +60,23 @@ namespace Comidas.Client.Repositorios
         public List<ComidasRapidas> ObtenerComidas()
         {
             return new List<ComidasRapidas>()
+            {};
+        }
+
+        public async Task<HttpResponseWrapper<TResponse>> Post<T, TResponse>(string url, T enviar)
         {
-            new ComidasRapidas(){titulo = "Perro Caliente",precio = 2500},
-            new ComidasRapidas(){titulo = "Hamburguesa",precio = 8500},
-            new ComidasRapidas(){titulo = "Pizza",precio = 4500},
-            new ComidasRapidas(){titulo = "Salchipapa",precio = 6500}
-        };
+            var enviarJSON = JsonSerializer.Serialize(enviar);
+            var enviarContent = new StringContent(enviarJSON, Encoding.UTF8, "application/json");
+            var responseHttp = await httpClient.PostAsync(url, enviarContent);
+            if (responseHttp.IsSuccessStatusCode)
+            {
+                var response = await DeserializarRespuesta<TResponse>(responseHttp, OpcionesPorDefectoJSON);
+                return new HttpResponseWrapper<TResponse>(response, false, responseHttp);
+            }
+            else
+            {
+                return new HttpResponseWrapper<TResponse>(default, true, responseHttp);
+            }
         }
     }
 }

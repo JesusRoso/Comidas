@@ -15,6 +15,10 @@
 
 @if(mostarLista)
 {
+
+<FiltroPersonas Persona="Personas" PersonaCompleta="PersonaCompleta" 
+			  CargaNuevaPersona="CargaNuevaPersona" CargaNuevaPersonaCompleta="LimpiarOnClick"></FiltroPersonas>
+ <Paginacion PaginaActual="paginaActual" PaginaSeleccionada="paginaSeleccionada" PaginasTotales="paginasTotales"></Paginacion>
  <ListadoGenerico Listado="Personas">
 	<HayRegistrosCompleto>
 		<table class="table table-striped">
@@ -29,8 +33,12 @@
                 {
                     <tr>
                         <td>
-                            <a href="/personas/editar/@item.Id" class="btn btn-success">Editar</a>
-                            <button @onclick="@(()=>BorrarGenero(item))" class="btn btn-danger">Borrar</button>
+                            <AuthorizeView Roles="admin"> @*Con AuthorizeView podemos dar autorización para mostrar contenido o realizar cambios*@
+	                            <Authorized>
+		                            <a href="/personas/editar/@item.Id" class="btn btn-success">Editar</a>
+                                    <button @onclick="@(()=>BorrarPersona(item))" class="btn btn-danger">Borrar</button>
+	                            </Authorized>
+                            </AuthorizeView>
                         </td>
                         <td>@item.Nombre</td>
                     </tr>
@@ -43,25 +51,55 @@
 
 
 @code {
-    bool mostarLista = false;
-    public void mostrarListado()
-    {
-        mostarLista = !mostarLista;
-    }
-    public List<Persona> Personas { get; set; } = new List<Persona>();
 
+    bool mostarLista = false;
+    private int paginaActual = 1; //paginación
+    private int paginasTotales; //paginación
+    public List<Persona> Personas { get; set; } = new List<Persona>();
+    public List<Persona>PersonaCompleta { get; set; } = new List<Persona>();
 
     protected async override Task OnInitializedAsync() 
     {
         await Cargar();
     }
-
-    private async Task Cargar() // con este método vamos a tener el listado de personas en la propiedad Personas
+    public void mostrarListado()
     {
-        var responseHTTP = await repositorio.Get<List<Persona>>("api/personas"); // con esto se obtiene el listado de personas de la base de datos
-		Personas = responseHTTP.Response;
+        mostarLista = !mostarLista;
     }
-    private async Task BorrarGenero(Persona persona)
+
+    //filtro
+    private void CargaNuevaPersona(string nombre)
+    {
+        Personas = Personas.Where(x => x.Nombre.ToLower().Contains(nombre.ToLower())).ToList();
+    }
+    private void LimpiarOnClick()
+    {
+        Personas = PersonaCompleta;
+    }
+    //fin filtro
+
+    //paginación
+    private async Task paginaSeleccionada(int pagina)
+    {
+        paginaActual = pagina;
+        await Cargar(pagina);
+    }
+
+    private async Task Cargar(int pagina = 1) // con este método vamos a tener el listado de personas en la propiedad Personas
+    {
+        var responseHttp = await repositorio.Get<List<Persona>>($"api/personas?pagina={pagina}"); // con esto se obtiene el listado de personas de la base de datos
+        if (!responseHttp.Error)
+        {
+            Personas = responseHttp.Response;
+            PersonaCompleta = responseHttp.Response;
+            var conteo = responseHttp.HttpResponseMessage.Headers.GetValues("conteo").FirstOrDefault();
+            paginasTotales = int.Parse(responseHttp.HttpResponseMessage.Headers.GetValues("totalPaginas").FirstOrDefault());
+        }
+    }
+    //fin paginación
+
+    //borrar persona
+    private async Task BorrarPersona(Persona persona)
     {
         var responseHTTP = await repositorio.Delete($"api/personas/{persona.Id}");
         if(responseHTTP.Error)
@@ -70,8 +108,9 @@
         }
         else
         {
+            await mostrarMensajes.MostrarMensajeExitoso("Se eliminó correctamente");
             await Cargar();
         }
     }
-
+    //fin borrar comida
 }

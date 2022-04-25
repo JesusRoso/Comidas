@@ -3,6 +3,8 @@ using Comidas.Client.Repositorios;
 using Comidas.Client.Helpers;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Comidas.Client.Auth;
+using Microsoft.AspNetCore.Components.Authorization;
 
 namespace BlazorComidas.Client 
 { 
@@ -14,7 +16,7 @@ namespace BlazorComidas.Client
             builder.RootComponents.Add<App>("#app");
             builder.RootComponents.Add<HeadOutlet>("head::after");
 
-            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            builder.Services.AddSingleton(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
             ConfigureServices(builder.Services);
             await builder.Build().RunAsync();
@@ -25,6 +27,13 @@ namespace BlazorComidas.Client
             services.AddTransient<ServiciosTrancient>();
             services.AddScoped<IRepositorio,Repositorio>();
             services.AddScoped<IMostrarMensajes,MostrarMensajes>();
+            services.AddApiAuthorization();
+            services.AddScoped<ProveedorAutenticacionJWT>();
+            services.AddScoped<AuthenticationStateProvider, ProveedorAutenticacionJWT>(
+                provider => provider.GetRequiredService<ProveedorAutenticacionJWT>());
+            services.AddScoped<ILoginService, ProveedorAutenticacionJWT>(
+                provider => provider.GetRequiredService<ProveedorAutenticacionJWT>());
+            services.AddScoped<RenovadorToken>();
         }
     }
 

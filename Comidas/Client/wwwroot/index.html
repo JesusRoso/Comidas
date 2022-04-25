@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Comidas</title>
     <base href="/" />
+    <link href="manifest.json" rel="manifest" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link href="Comidas.Client.styles.css" rel="stylesheet" />
@@ -19,8 +20,32 @@
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
+
     <script src="_framework/blazor.webassembly.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("/service-worker.js");
+            });
+        }
+    </script>
+    <!--<script>
+        if ('serviceWorker' in navigator) {
+             //Register a service worker hosted at the root of the
+             //site using the default scope.
+            navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
+                console.log('Service worker registration succeeded:', registration);
+            }).catch(function (error) {
+                console.log('Service worker registration failed:', error);
+            });
+         
+        } else {
+            console.log('Service workers are not supported.');
+        }
+    </script>-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/Script.js"></script>
+
 </body>
 
 </html>

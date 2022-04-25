@@ -1,0 +1,34 @@
+﻿@inject IRepositorio repositorio
+<h3>Filtro Personas</h3>
+
+<div class="form-inline">
+	<div class="form-group mb-2">
+		<label for="titulo" class="sr-only">Nombre</label>
+		<input @bind-value="nombre" @bind-value:event="oninput" @onkeypress="@((KeyboardEventArgs e)=> TituloKeyPress(e))"
+		type="text" class="form-control" id="titulo" placeholder="Nombre comida" />
+	</div>
+	<button type="button" class="btn btn-primary mb-2 mx-sm-3" @onclick="@(()=>CargaNuevaPersona.InvokeAsync(nombre))">Filtrar</button>
+	<button type="button" class="btn btn-danger mb-2 "  @onclick="CargaNuevaPersonaCompleta">Limpiar</button>
+</div>
+
+@code 
+{
+	[Parameter] public List<Persona> Persona { get; set; } = new List<Persona>();
+	[Parameter] public List<Persona> PersonaCompleta { get; set; } = new List<Persona>();
+	[Parameter] public EventCallback<string> CargaNuevaPersona { get; set; }
+	[Parameter] public EventCallback CargaNuevaPersonaCompleta { get; set; }
+
+	string nombre = "";
+	private void TituloKeyPress(KeyboardEventArgs e)
+	{
+		if(e.Key == "Enter")
+		{
+			Persona = Persona.Where(x => x.Nombre.ToLower().Contains(nombre.ToLower())).ToList();
+		}
+	}
+	protected override void OnInitialized()
+	{
+		Persona = PersonaCompleta;
+		
+	}
+}

@@ -1,0 +1,15 @@
+﻿@page "/logout"
+@using Comidas.Client.Auth
+
+@inject ILoginService loginService
+@inject NavigationManager navigationManager	
+
+<text>Deslogueando ...</text>
+
+@code {
+	protected override async Task OnInitializedAsync()
+	{
+		await loginService.Logout();
+		navigationManager.NavigateTo("");
+	}
+}

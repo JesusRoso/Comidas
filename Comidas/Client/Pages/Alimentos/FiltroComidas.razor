@@ -1,5 +1,4 @@
-﻿@page "/alimentos/buscar"
-@inject IRepositorio repositorio
+﻿@inject IRepositorio repositorio
 <h3>Filtro Comidas</h3>
 
 <div class="form-inline">
@@ -13,21 +12,23 @@
 		<input @bind-value="precio" @bind-value:event="oninput" @onkeypress="@((KeyboardEventArgs e)=> PrecioKeyPress(e))"
 		type="number" class="form-control" id="precio" />
 	</div>
-	<button type="button" class="btn btn-primary mb-2 mx-sm-3" @onclick="CargaNuevaComida">Filtrar</button>
-	<button type="button" class="btn btn-danger mb-2 " @onclick="LimpiarOnClick">Limpiar</button>
+	<button type="button" class="btn btn-primary mb-2 mx-sm-3" @onclick="@(()=>CargaNuevaComida.InvokeAsync(titulo))">Filtrar</button>
+	<button type="button" class="btn btn-danger mb-2 "  @onclick="CargaNuevaComidaCompleta">Limpiar</button>
 </div>
-
-<ListadoComidas ComidaRapida=ComidasRapidas></ListadoComidas>
 
 @code 
 {
-	private List<ComidasRapidas> ComidasRapidas;
+	[Parameter] public List<ComidasRapidas> ComidasRapidas { get; set; } = new List<ComidasRapidas>();
+	[Parameter] public List<ComidasRapidas> ComidasRapidasCompleta { get; set; } = new List<ComidasRapidas>();
+	[Parameter] public EventCallback<string> CargaNuevaComida { get; set; }
+	[Parameter] public EventCallback CargaNuevaComidaCompleta { get; set; }
+
 	string titulo = "";
 	private void TituloKeyPress(KeyboardEventArgs e)
 	{
 		if(e.Key == "Enter")
 		{
-			CargaNuevaComida();
+			ComidasRapidas = ComidasRapidas.Where(x => x.titulo.ToLower().Contains(titulo.ToLower())).ToList();
 		}
 	}
 	int precio = 0;
@@ -35,23 +36,12 @@
 	{
 		if(e.Key == "Enter")
 		{
-			CargaNuevaComida();
+			ComidasRapidas = ComidasRapidas.Where(x => x.titulo.ToLower().Contains(titulo.ToLower())).ToList();
 		}
 	}
 	protected override void OnInitialized()
 	{
-		ComidasRapidas = repositorio.ObtenerComidas();
-	}
-	private void CargaNuevaComida()
-	{
-		ComidasRapidas = repositorio.ObtenerComidas().Where(x => x.titulo.ToLower().Contains(titulo.ToLower())).ToList();
-		Console.WriteLine($"Nombre: {titulo}");
-		Console.WriteLine($"Precio: {precio}");
-	}
-	private void LimpiarOnClick()
-	{
-		ComidasRapidas = repositorio.ObtenerComidas();
-		titulo = "";
-		precio = 0;
+		ComidasRapidas = ComidasRapidasCompleta;
+		
 	}
 }
