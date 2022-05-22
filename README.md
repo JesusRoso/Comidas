@@ -1,13 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <InputFile OnChange="OnChange" accept=".jpg,.jpeg,.png" capture />
-</body>
-</html>
+<div>
+    <label>@Label</label>
+    <div>
+        @*<input type="file" accept="image/*" capture>*@
+        <InputFile OnChange="OnChange" accept=".jpg,.jpeg,.png" capture />
+    </div>
+</div>
+
+<div>
+    @if (imagenBase64 != null)
+    {
+        <div>
+            <div style="margin:10px">
+                <img src="data:image/jpeg;base64, @imagenBase64" style="width: 400px" />
+            </div>
+        </div>
+    }
+    @if (ImagenURL != null)
+    {
+        <div>
+            <div style="margin:10px">
+                <img src="@ImagenURL" style="width: 400px" />
+            </div>
+        </div>
+    }
+</div>
+
+
+@code {
+    [Parameter] public string Label { get; set; } = "Imagen";
+    [Parameter] public string ImagenURL { get; set; }
+    //[Parameter] public EventCallback<string> ImagenSeleccionada { get; set; }
+    private string imagenBase64;
+
+    async Task OnChange(InputFileChangeEventArgs e)
+    {
+        var imagenes = e.GetMultipleFiles();
+
+        foreach (var imagen in imagenes)
+        {
+            var arrbytes = new byte[imagen.Size];
+            await imagen.OpenReadStream().ReadAsync(arrbytes);
+            imagenBase64 = Convert.ToBase64String(arrbytes);
+            ImagenURL = null;
+            //await ImagenSeleccionada.InvokeAsync(imagenBase64);
+            StateHasChanged();
+        }
+
+    }
+}
