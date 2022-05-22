@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="file" accept="image/*" capture>
+    
+    <InputFile OnChange="OnChange" accept=".jpg,.jpeg,.png" capture />
 </body>
 </html>
